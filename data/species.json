@@ -27,12 +27,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/gurukun/main.jpg",
+    "image": "./assets/species/gurukun/main.webp",
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=933",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/15550803/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/gurukun/thumb.jpg"
+    "thumb": "./assets/species/gurukun/thumb.webp"
   },
   {
     "id": "irabucha",
@@ -62,18 +62,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/irabucha/main.jpg",
+    "image": "./assets/species/irabucha/main.webp",
     "source": "https://commons.wikimedia.org/wiki/File:Chlorurus_sordidus_by_Jaroslaw_Barski.jpg",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/239190401/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/irabucha/thumb.jpg"
+    "thumb": "./assets/species/irabucha/thumb.webp"
   },
   {
     "id": "akajin",
     "nameJa": "アカジンミーバイ",
     "localName": "スジアラ",
-    "scientificName": "Variola louti",
+    "scientificName": "Plectropomus leopardus",
     "kingdomGroup": "魚類",
     "family": "ハタ科",
     "categoryId": "hata",
@@ -97,12 +97,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/akajin/main.jpg",
     "source": "https://fishbase.se/summary/Variola-louti",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/217388/large.jpg",
-    "imageAttribution": "(c) Jacek Madejski, some rights reserved (CC BY-SA)",
-    "imageLicense": "cc-by-sa",
-    "thumb": "./assets/species/akajin/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/216412385/large.jpeg",
+    "imageAttribution": "(c) Sebastien Landat, all rights reserved, uploaded by Sebastien Landat",
+    "image": "./assets/species/akajin/main.webp",
+    "thumb": "./assets/species/akajin/thumb.webp"
   },
   {
     "id": "taman",
@@ -132,12 +131,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/taman/main.jpg",
+    "image": "./assets/species/taman/main.webp",
     "source": "https://commons.wikimedia.org/wiki/File:Lethrinus_nebulosus_287497294_(cropped).jpg",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/5333031/large.jpeg",
     "imageAttribution": "(c) John Sear, some rights reserved (CC BY-NC), uploaded by John Sear",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/taman/thumb.jpg"
+    "thumb": "./assets/species/taman/thumb.webp"
   },
   {
     "id": "kumanomi",
@@ -167,12 +166,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kumanomi/main.jpg",
+    "image": "./assets/species/kumanomi/main.webp",
     "source": "https://fishbase.se/summary/Amphiprion-clarkii",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/19350008/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/kumanomi/thumb.jpg"
+    "thumb": "./assets/species/kumanomi/thumb.webp"
   },
   {
     "id": "harisenbon",
@@ -202,12 +201,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/harisenbon/main.jpg",
+    "image": "./assets/species/harisenbon/main.webp",
     "source": "https://fishbase.org/summary/4659",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/246231050/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/harisenbon/thumb.jpg"
+    "thumb": "./assets/species/harisenbon/thumb.webp"
   },
   {
     "id": "kurosora",
@@ -237,12 +236,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kurosora/main.jpg",
+    "image": "./assets/species/kurosora/main.webp",
     "source": "https://www.fishbase.se/summary/stegastes-nigricans",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/234150484/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/kurosora/thumb.jpg"
+    "thumb": "./assets/species/kurosora/thumb.webp"
   },
   {
     "id": "chouchou",
@@ -271,11 +270,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/chouchou/main.jpg",
+    "image": "./assets/species/chouchou/main.webp",
     "source": "https://www.fishbase.se/summary/Chaetodon-auripes.html",
     "imageSource": "https://static.inaturalist.org/photos/29480784/large.jpg",
     "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "thumb": "./assets/species/chouchou/thumb.jpg"
+    "thumb": "./assets/species/chouchou/thumb.webp"
   },
   {
     "id": "togetyou",
@@ -305,12 +304,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/togetyou/main.jpg",
+    "image": "./assets/species/togetyou/main.webp",
     "source": "https://www.fishbase.se/summary/Chaetodon-auriga.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/14193990/large.jpg",
     "imageAttribution": "(c) zsispeo, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "thumb": "./assets/species/togetyou/thumb.jpg"
+    "thumb": "./assets/species/togetyou/thumb.webp"
   },
   {
     "id": "hatatate-dai",
@@ -340,16 +339,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hatatate-dai/main.jpg",
+    "image": "./assets/species/hatatate-dai/main.webp",
     "source": "https://www.fishbase.se/summary/Heniochus-acuminatus.html",
     "imageSource": "https://static.inaturalist.org/photos/317335632/large.jpg",
     "imageAttribution": "(c) Tim Cameron, all rights reserved, uploaded by Tim Cameron",
-    "thumb": "./assets/species/hatatate-dai/thumb.jpg"
+    "thumb": "./assets/species/hatatate-dai/thumb.webp"
   },
   {
     "id": "misujityou",
-    "nameJa": "ミスジチョウチョウウオ",
-    "localName": "ミスジチョウチョウウオ",
+    "nameJa": "ヤリカタギ",
+    "localName": "ヤリカタギ",
     "scientificName": "Chaetodon trifascialis",
     "kingdomGroup": "魚類",
     "family": "チョウチョウウオ科",
@@ -377,8 +376,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/171100563/large.jpg",
     "imageAttribution": "(c) Francois Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/misujityou/main.jpg",
-    "thumb": "./assets/species/misujityou/thumb.jpg"
+    "image": "./assets/species/misujityou/main.webp",
+    "thumb": "./assets/species/misujityou/thumb.webp"
   },
   {
     "id": "akebono-tyou",
@@ -411,13 +410,13 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/234051408/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/akebono-tyou/main.jpg",
-    "thumb": "./assets/species/akebono-tyou/thumb.jpg"
+    "image": "./assets/species/akebono-tyou/main.webp",
+    "thumb": "./assets/species/akebono-tyou/thumb.webp"
   },
   {
     "id": "cyouban",
-    "nameJa": "チョウハン",
-    "localName": "チョウハン",
+    "nameJa": "セグロチョウチョウウオ",
+    "localName": "セグロチョウチョウウオ",
     "scientificName": "Chaetodon ephippium",
     "kingdomGroup": "魚類",
     "family": "チョウチョウウオ科",
@@ -441,17 +440,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/cyouban/main.jpg",
+    "image": "./assets/species/cyouban/main.webp",
     "source": "https://www.fishbase.se/summary/Chaetodon-ephippium.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/370408545/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/cyouban/thumb.jpg"
+    "thumb": "./assets/species/cyouban/thumb.webp"
   },
   {
     "id": "yaritama-tyou",
-    "nameJa": "ヤリタテダイ",
-    "localName": "ヤリタテダイ",
+    "nameJa": "ツノハタタテダイ",
+    "localName": "ツノハタタテダイ",
     "scientificName": "Heniochus varius",
     "kingdomGroup": "魚類",
     "family": "チョウチョウウオ科",
@@ -479,8 +478,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/14745404/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/yaritama-tyou/main.jpg",
-    "thumb": "./assets/species/yaritama-tyou/thumb.jpg"
+    "image": "./assets/species/yaritama-tyou/main.webp",
+    "thumb": "./assets/species/yaritama-tyou/thumb.webp"
   },
   {
     "id": "nishiki-tyou",
@@ -513,8 +512,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/197304439/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/nishiki-tyou/main.jpg",
-    "thumb": "./assets/species/nishiki-tyou/thumb.jpg"
+    "image": "./assets/species/nishiki-tyou/main.webp",
+    "thumb": "./assets/species/nishiki-tyou/thumb.webp"
   },
   {
     "id": "futatobi-tyou",
@@ -545,16 +544,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/futatobi-tyou/main.jpg",
+    "image": "./assets/species/futatobi-tyou/main.webp",
     "source": "https://www.fishbase.se/summary/Chaetodon-vagabundus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/370078467/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/futatobi-tyou/thumb.jpg"
+    "thumb": "./assets/species/futatobi-tyou/thumb.webp"
   },
   {
     "id": "itohiki-tyou",
-    "nameJa": "イトヒキダイ",
+    "nameJa": "ミゾレチョウチョウウオ",
     "localName": "ハナグロチョウチョウウオ",
     "scientificName": "Chaetodon kleinii",
     "kingdomGroup": "魚類",
@@ -584,8 +583,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/233628218/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/itohiki-tyou/main.jpg",
-    "thumb": "./assets/species/itohiki-tyou/thumb.jpg"
+    "image": "./assets/species/itohiki-tyou/main.webp",
+    "thumb": "./assets/species/itohiki-tyou/thumb.webp"
   },
   {
     "id": "honsome-wake-bera",
@@ -614,11 +613,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/honsome-wake-bera/main.jpg",
+    "image": "./assets/species/honsome-wake-bera/main.webp",
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5375",
     "imageSource": "https://static.inaturalist.org/photos/14296673/large.jpg",
     "imageAttribution": "(c) Hickson Fergusson, all rights reserved, uploaded by Hickson Fergusson",
-    "thumb": "./assets/species/honsome-wake-bera/thumb.jpg"
+    "thumb": "./assets/species/honsome-wake-bera/thumb.webp"
   },
   {
     "id": "kanmuri-bera",
@@ -648,17 +647,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kanmuri-bera/main.jpg",
+    "image": "./assets/species/kanmuri-bera/main.webp",
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5371",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230132423/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/kanmuri-bera/thumb.jpg"
+    "thumb": "./assets/species/kanmuri-bera/thumb.webp"
   },
   {
     "id": "nishiki-bera",
-    "nameJa": "ニシキベラ",
-    "localName": "ニシキベラ",
+    "nameJa": "オトメベラ",
+    "localName": "オトメベラ",
     "scientificName": "Thalassoma lunare",
     "kingdomGroup": "魚類",
     "family": "ベラ科",
@@ -683,17 +682,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nishiki-bera/main.jpg",
+    "image": "./assets/species/nishiki-bera/main.webp",
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5461",
     "imageSource": "https://static.inaturalist.org/photos/123362649/large.jpg",
     "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "thumb": "./assets/species/nishiki-bera/thumb.jpg"
+    "thumb": "./assets/species/nishiki-bera/thumb.webp"
   },
   {
     "id": "tensu",
     "nameJa": "テンス",
     "localName": "テンス",
-    "scientificName": "Xyrichtys dea",
+    "scientificName": "Iniistius dea",
     "kingdomGroup": "魚類",
     "family": "ベラ科",
     "categoryId": "bera",
@@ -717,12 +716,17 @@
       "behavior",
       "feature"
     ],
-    "source": "https://www.fishbase.se/summary/speciessummary.php?id=5508"
+    "source": "https://www.fishbase.se/summary/speciessummary.php?id=5508",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/360978999/large.jpg",
+    "imageAttribution": "(c) Francesco Ricciardi, some rights reserved (CC BY-NC), uploaded by Francesco Ricciardi",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/tensu/main.webp",
+    "thumb": "./assets/species/tensu/thumb.webp"
   },
   {
     "id": "itonuki-bera",
-    "nameJa": "イトヒキベラ",
-    "localName": "イトヒキベラ",
+    "nameJa": "クロヘリイトヒキベラ",
+    "localName": "クロヘリイトヒキベラ",
     "scientificName": "Cirrhilabrus cyanopleura",
     "kingdomGroup": "魚類",
     "family": "ベラ科",
@@ -750,12 +754,12 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/266487523/large.jpg",
     "imageAttribution": "(c) Wayne and Pam Osborn, some rights reserved (CC BY-NC), uploaded by Wayne and Pam Osborn",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/itonuki-bera/main.jpg",
-    "thumb": "./assets/species/itonuki-bera/thumb.jpg"
+    "image": "./assets/species/itonuki-bera/main.webp",
+    "thumb": "./assets/species/itonuki-bera/thumb.webp"
   },
   {
     "id": "kurohoshi-bera",
-    "nameJa": "クロヘリイトヒキベラ",
+    "nameJa": "クジャクベラ",
     "localName": "クロヘリベラ",
     "scientificName": "Paracheilinus carpenteri",
     "kingdomGroup": "魚類",
@@ -783,13 +787,13 @@
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5430",
     "imageSource": "https://static.inaturalist.org/photos/28751891/large.jpg",
     "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "image": "./assets/species/kurohoshi-bera/main.jpg",
-    "thumb": "./assets/species/kurohoshi-bera/thumb.jpg"
+    "image": "./assets/species/kurohoshi-bera/main.webp",
+    "thumb": "./assets/species/kurohoshi-bera/thumb.webp"
   },
   {
     "id": "onigasira-bera",
-    "nameJa": "オグロベラ",
-    "localName": "オグロベラ",
+    "nameJa": "キツネオハグロベラ",
+    "localName": "キツネオハグロベラ",
     "scientificName": "Pteragogus enneacanthus",
     "kingdomGroup": "魚類",
     "family": "ベラ科",
@@ -818,8 +822,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/233180036/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/onigasira-bera/main.jpg",
-    "thumb": "./assets/species/onigasira-bera/thumb.jpg"
+    "image": "./assets/species/onigasira-bera/main.webp",
+    "thumb": "./assets/species/onigasira-bera/thumb.webp"
   },
   {
     "id": "yabure-bera",
@@ -848,16 +852,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yabure-bera/main.jpg",
+    "image": "./assets/species/yabure-bera/main.webp",
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5404",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/254501975/large.jpg",
     "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/yabure-bera/thumb.jpg"
+    "thumb": "./assets/species/yabure-bera/thumb.webp"
   },
   {
     "id": "ryu-kyu-bera",
-    "nameJa": "リュウキュウヤライイシモチ",
+    "nameJa": "ブチススキベラ",
     "localName": "ベラ類",
     "scientificName": "Anampses caeruleopunctatus",
     "kingdomGroup": "魚類",
@@ -887,14 +891,14 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/254202819/large.jpg",
     "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/ryu-kyu-bera/main.jpg",
-    "thumb": "./assets/species/ryu-kyu-bera/thumb.jpg"
+    "image": "./assets/species/ryu-kyu-bera/main.webp",
+    "thumb": "./assets/species/ryu-kyu-bera/thumb.webp"
   },
   {
     "id": "seiryu-bera",
     "nameJa": "セジロノドグロベラ",
     "localName": "ベラ類",
-    "scientificName": "Halichoeres prosopeion",
+    "scientificName": "Macropharyngodon negrosensis",
     "kingdomGroup": "魚類",
     "family": "ベラ科",
     "categoryId": "bera",
@@ -919,11 +923,10 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/speciessummary.php?id=5392",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/194652894/large.jpg",
-    "imageAttribution": "(c) Ivan Samra, some rights reserved (CC BY-NC), uploaded by Ivan Samra",
-    "imageLicense": "cc-by-nc",
-    "image": "./assets/species/seiryu-bera/main.jpg",
-    "thumb": "./assets/species/seiryu-bera/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/30788358/large.jpg",
+    "imageAttribution": "(c) Tim Cameron, all rights reserved, uploaded by Tim Cameron",
+    "image": "./assets/species/seiryu-bera/main.webp",
+    "thumb": "./assets/species/seiryu-bera/thumb.webp"
   },
   {
     "id": "ruri-suzumedai",
@@ -953,11 +956,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ruri-suzumedai/main.jpg",
+    "image": "./assets/species/ruri-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Chrysiptera-cyanea",
     "imageSource": "https://static.inaturalist.org/photos/29025784/large.jpg",
     "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "thumb": "./assets/species/ruri-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/ruri-suzumedai/thumb.webp"
   },
   {
     "id": "debasu-suzumedai",
@@ -987,12 +990,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/debasu-suzumedai/main.jpg",
+    "image": "./assets/species/debasu-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Chromis-viridis",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/936216/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/debasu-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/debasu-suzumedai/thumb.webp"
   },
   {
     "id": "mitsuhoshi-kuro-suzumedai",
@@ -1022,12 +1025,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/mitsuhoshi-kuro-suzumedai/main.jpg",
+    "image": "./assets/species/mitsuhoshi-kuro-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Dascyllus-trimaculatus",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/207083638/large.jpg",
     "imageAttribution": "(c) Valued image, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "thumb": "./assets/species/mitsuhoshi-kuro-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/mitsuhoshi-kuro-suzumedai/thumb.webp"
   },
   {
     "id": "oyabicha",
@@ -1058,12 +1061,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/oyabicha/main.jpg",
+    "image": "./assets/species/oyabicha/main.webp",
     "source": "https://www.fishbase.se/summary/Abudefduf-vaigiensis",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/323527412/large.jpg",
     "imageAttribution": "(c) portioid, some rights reserved (CC BY), uploaded by portioid",
     "imageLicense": "cc-by",
-    "thumb": "./assets/species/oyabicha/thumb.jpg"
+    "thumb": "./assets/species/oyabicha/thumb.webp"
   },
   {
     "id": "rokusen-suzumedai",
@@ -1094,12 +1097,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/rokusen-suzumedai/main.jpg",
+    "image": "./assets/species/rokusen-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Abudefduf-sexfasciatus",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/237987698/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/rokusen-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/rokusen-suzumedai/thumb.webp"
   },
   {
     "id": "shiro-suzumedai",
@@ -1133,8 +1136,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/6085848/large.jpg",
     "imageAttribution": "(c) batfish, some rights reserved (CC BY-NC), uploaded by batfish",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/shiro-suzumedai/main.jpg",
-    "thumb": "./assets/species/shiro-suzumedai/thumb.jpg"
+    "image": "./assets/species/shiro-suzumedai/main.webp",
+    "thumb": "./assets/species/shiro-suzumedai/thumb.webp"
   },
   {
     "id": "futa-suji-suzumedai",
@@ -1164,16 +1167,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/futa-suji-suzumedai/main.jpg",
+    "image": "./assets/species/futa-suji-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Dascyllus-reticulatus",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/375866539/large.jpg",
     "imageAttribution": "(c) Raphael Forns, some rights reserved (CC BY-NC), uploaded by Raphael Forns",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/futa-suji-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/futa-suji-suzumedai/thumb.webp"
   },
   {
     "id": "nana-iro-suzumedai",
-    "nameJa": "ナナイロスズメダイ",
+    "nameJa": "ソラスズメダイ",
     "localName": "ナナイロスズメ",
     "scientificName": "Pomacentrus coelestis",
     "kingdomGroup": "魚類",
@@ -1198,16 +1201,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nana-iro-suzumedai/main.jpg",
+    "image": "./assets/species/nana-iro-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Pomacentrus-coelestis",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230478520/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/nana-iro-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/nana-iro-suzumedai/thumb.webp"
   },
   {
     "id": "oni-suzumedai",
-    "nameJa": "オニスズメダイ",
+    "nameJa": "フチドリスズメダイ",
     "localName": "オニスズメ",
     "scientificName": "Stegastes fasciolatus",
     "kingdomGroup": "魚類",
@@ -1236,8 +1239,8 @@
     "source": "https://www.fishbase.se/summary/Stegastes-fasciolatus",
     "imageSource": "https://static.inaturalist.org/photos/157681427/large.jpg",
     "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "image": "./assets/species/oni-suzumedai/main.jpg",
-    "thumb": "./assets/species/oni-suzumedai/thumb.jpg"
+    "image": "./assets/species/oni-suzumedai/main.webp",
+    "thumb": "./assets/species/oni-suzumedai/thumb.webp"
   },
   {
     "id": "yama-buki-suzumedai",
@@ -1266,12 +1269,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yama-buki-suzumedai/main.jpg",
+    "image": "./assets/species/yama-buki-suzumedai/main.webp",
     "source": "https://www.fishbase.se/summary/Amblyglyphidodon-aureus",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/109525116/large.jpg",
     "imageAttribution": "(c) John Thorogood, some rights reserved (CC BY-NC), uploaded by John Thorogood",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/yama-buki-suzumedai/thumb.jpg"
+    "thumb": "./assets/species/yama-buki-suzumedai/thumb.webp"
   },
   {
     "id": "nanyouhagi",
@@ -1300,17 +1303,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nanyouhagi/main.jpg",
+    "image": "./assets/species/nanyouhagi/main.webp",
     "source": "https://www.fishbase.se/summary/Paracanthurus-hepatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/30261643/large.jpg",
     "imageAttribution": "(c) H. Krisp, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "thumb": "./assets/species/nanyouhagi/thumb.jpg"
+    "thumb": "./assets/species/nanyouhagi/thumb.webp"
   },
   {
     "id": "kurohagi",
-    "nameJa": "クロハギ",
-    "localName": "クロハギ",
+    "nameJa": "メガネクロハギ",
+    "localName": "メガネクロハギ",
     "scientificName": "Acanthurus nigricans",
     "kingdomGroup": "魚類",
     "family": "ニザダイ科",
@@ -1339,8 +1342,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/255715831/large.jpeg",
     "imageAttribution": "(c) Wayne and Pam Osborn, some rights reserved (CC BY-NC), uploaded by Wayne and Pam Osborn",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/kurohagi/main.jpg",
-    "thumb": "./assets/species/kurohagi/thumb.jpg"
+    "image": "./assets/species/kurohagi/main.webp",
+    "thumb": "./assets/species/kurohagi/thumb.webp"
   },
   {
     "id": "nijihagi",
@@ -1370,12 +1373,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nijihagi/main.jpg",
+    "image": "./assets/species/nijihagi/main.webp",
     "source": "https://www.fishbase.se/summary/Acanthurus-lineatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/106348771/large.jpg",
     "imageAttribution": "(c) Francois Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/nijihagi/thumb.jpg"
+    "thumb": "./assets/species/nijihagi/thumb.webp"
   },
   {
     "id": "tenguhagi",
@@ -1405,12 +1408,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/tenguhagi/main.jpg",
+    "image": "./assets/species/tenguhagi/main.webp",
     "source": "https://www.fishbase.se/summary/Naso-unicornis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/653446742/large.jpg",
     "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/tenguhagi/thumb.jpg"
+    "thumb": "./assets/species/tenguhagi/thumb.webp"
   },
   {
     "id": "hirenagahagi",
@@ -1439,12 +1442,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hirenagahagi/main.jpg",
+    "image": "./assets/species/hirenagahagi/main.webp",
     "source": "https://www.fishbase.se/summary/Zebrasoma-veliferum.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/186667903/large.jpg",
     "imageAttribution": "(c) Rickard Zerpe, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "thumb": "./assets/species/hirenagahagi/thumb.jpg"
+    "thumb": "./assets/species/hirenagahagi/thumb.webp"
   },
   {
     "id": "sarasahagi",
@@ -1478,8 +1481,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/555898434/large.jpg",
     "imageAttribution": "(c) Rickard Zerpe, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "image": "./assets/species/sarasahagi/main.jpg",
-    "thumb": "./assets/species/sarasahagi/thumb.jpg"
+    "image": "./assets/species/sarasahagi/main.webp",
+    "thumb": "./assets/species/sarasahagi/thumb.webp"
   },
   {
     "id": "shimahanagoi",
@@ -1510,17 +1513,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/shimahanagoi/main.jpg",
+    "image": "./assets/species/shimahanagoi/main.webp",
     "source": "https://www.fishbase.se/summary/Acanthurus-triostegus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/237987787/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/shimahanagoi/thumb.jpg"
+    "thumb": "./assets/species/shimahanagoi/thumb.webp"
   },
   {
     "id": "hiratenguhagi",
-    "nameJa": "ヒラテングハギ",
-    "localName": "ヒラテングハギ",
+    "nameJa": "ミヤコテングハギ",
+    "localName": "ミヤコテングハギ",
     "scientificName": "Naso lituratus",
     "kingdomGroup": "魚類",
     "family": "ニザダイ科",
@@ -1544,18 +1547,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hiratenguhagi/main.jpg",
+    "image": "./assets/species/hiratenguhagi/main.webp",
     "source": "https://www.fishbase.se/summary/Naso-lituratus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/6635721/large.jpg",
     "imageAttribution": "(c) David R, some rights reserved (CC BY-NC), uploaded by David R",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/hiratenguhagi/thumb.jpg"
+    "thumb": "./assets/species/hiratenguhagi/thumb.webp"
   },
   {
     "id": "ao-budai",
     "nameJa": "アオブダイ",
     "localName": "イラブチャー（青）",
-    "scientificName": "Chlorurus capistratoides",
+    "scientificName": "Scarus ovifrons",
     "kingdomGroup": "魚類",
     "family": "ブダイ科",
     "categoryId": "budai",
@@ -1578,17 +1581,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ao-budai/main.jpg",
     "source": "https://www.fishbase.se/summary/Chlorurus-capistratoides.html",
-    "imageSource": "https://static.inaturalist.org/photos/189653654/large.jpg",
-    "imageAttribution": "(c) Ploypailin Rangseethampanya, all rights reserved, uploaded by Ploypailin Rangseethampanya",
-    "thumb": "./assets/species/ao-budai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/499466705/large.jpg",
+    "imageAttribution": "(c) Izuzuki, some rights reserved (CC BY)",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/ao-budai/main.webp",
+    "thumb": "./assets/species/ao-budai/thumb.webp"
   },
   {
     "id": "nanyo-budai",
     "nameJa": "ナンヨウブダイ",
     "localName": "イラブチャー",
-    "scientificName": "Scarus ovifrons",
+    "scientificName": "Chlorurus microrhinos",
     "kingdomGroup": "魚類",
     "family": "ブダイ科",
     "categoryId": "budai",
@@ -1611,18 +1615,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nanyo-budai/main.jpg",
     "source": "https://www.fishbase.se/summary/Scarus-ovifrons.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/499466705/large.jpg",
-    "imageAttribution": "(c) Izuzuki, some rights reserved (CC BY)",
-    "imageLicense": "cc-by",
-    "thumb": "./assets/species/nanyo-budai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/315435456/large.jpg",
+    "imageAttribution": "(c) David R, some rights reserved (CC BY-NC), uploaded by David R",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/nanyo-budai/main.webp",
+    "thumb": "./assets/species/nanyo-budai/thumb.webp"
   },
   {
     "id": "hi-budai",
     "nameJa": "ヒブダイ",
     "localName": "アカイラブチャー",
-    "scientificName": "Scarus rubroviolaceus",
+    "scientificName": "Scarus ghobban",
     "kingdomGroup": "魚類",
     "family": "ブダイ科",
     "categoryId": "budai",
@@ -1646,18 +1650,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hi-budai/main.jpg",
     "source": "https://www.fishbase.se/summary/Scarus-rubroviolaceus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/58070748/large.jpg",
-    "imageAttribution": "(c) Programa Marino del Golfo de California, some rights reserved (CC BY-NC-SA), uploaded by Programa Marino del Golfo de California",
-    "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/hi-budai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/183680244/large.jpg",
+    "imageAttribution": "(c) Rafi Amar, some rights reserved (CC BY-NC), uploaded by Rafi Amar",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/hi-budai/main.webp",
+    "thumb": "./assets/species/hi-budai/thumb.webp"
   },
   {
     "id": "oumu-budai",
     "nameJa": "オウムブダイ",
     "localName": "イラブチャー（大型）",
-    "scientificName": "Bolbometopon muricatum",
+    "scientificName": "Scarus psittacus",
     "kingdomGroup": "魚類",
     "family": "ブダイ科",
     "categoryId": "budai",
@@ -1681,16 +1685,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/oumu-budai/main.jpg",
     "source": "https://www.fishbase.se/summary/Bolbometopon-muricatum.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/709279/large.jpg",
-    "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/oumu-budai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/4676/large.jpg",
+    "imageAttribution": "(c) Ken-ichi Ueda, some rights reserved (CC BY)",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/oumu-budai/main.webp",
+    "thumb": "./assets/species/oumu-budai/thumb.webp"
   },
   {
     "id": "niji-budai",
-    "nameJa": "ニジブダイ",
+    "nameJa": "カワリブダイ",
     "localName": "イラブチャー（虹）",
     "scientificName": "Scarus dimidiatus",
     "kingdomGroup": "魚類",
@@ -1719,14 +1723,14 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/256040489/large.jpg",
     "imageAttribution": "(c) Wayne and Pam Osborn, some rights reserved (CC BY-NC), uploaded by Wayne and Pam Osborn",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/niji-budai/main.jpg",
-    "thumb": "./assets/species/niji-budai/thumb.jpg"
+    "image": "./assets/species/niji-budai/main.webp",
+    "thumb": "./assets/species/niji-budai/thumb.webp"
   },
   {
     "id": "buchi-budai",
     "nameJa": "ブチブダイ",
     "localName": "イラブチャー（ぶち）",
-    "scientificName": "Scarus chameleon",
+    "scientificName": "Scarus niger",
     "kingdomGroup": "魚類",
     "family": "ブダイ科",
     "categoryId": "budai",
@@ -1751,10 +1755,11 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Scarus-chameleon.html",
-    "imageSource": "https://static.inaturalist.org/photos/28951840/large.jpg",
-    "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "image": "./assets/species/buchi-budai/main.jpg",
-    "thumb": "./assets/species/buchi-budai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/153582238/large.jpg",
+    "imageAttribution": "(c) Francois Libert, some rights reserved (CC BY-NC-SA)",
+    "imageLicense": "cc-by-nc-sa",
+    "image": "./assets/species/buchi-budai/main.webp",
+    "thumb": "./assets/species/buchi-budai/thumb.webp"
   },
   {
     "id": "yukata-hata",
@@ -1783,11 +1788,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yukata-hata/main.jpg",
+    "image": "./assets/species/yukata-hata/main.webp",
     "source": "https://www.fishbase.se/summary/Cephalopholis-miniata.html",
     "imageSource": "https://static.inaturalist.org/photos/12505448/large.jpg",
     "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "thumb": "./assets/species/yukata-hata/thumb.jpg"
+    "thumb": "./assets/species/yukata-hata/thumb.webp"
   },
   {
     "id": "aka-hata",
@@ -1817,16 +1822,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/aka-hata/main.jpg",
+    "image": "./assets/species/aka-hata/main.webp",
     "source": "https://www.fishbase.se/summary/Epinephelus-fasciatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/6011963/large.jpg",
     "imageAttribution": "(c) Richard Ling, some rights reserved (CC BY-NC-ND)",
     "imageLicense": "cc-by-nc-nd",
-    "thumb": "./assets/species/aka-hata/thumb.jpg"
+    "thumb": "./assets/species/aka-hata/thumb.webp"
   },
   {
     "id": "onihata",
-    "nameJa": "オニハタ",
+    "nameJa": "シロブチハタ",
     "localName": "オニミーバイ",
     "scientificName": "Epinephelus maculatus",
     "kingdomGroup": "魚類",
@@ -1855,12 +1860,12 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/258269804/large.jpeg",
     "imageAttribution": "(c) Sylvain Le Bris, some rights reserved (CC BY-NC), uploaded by Sylvain Le Bris",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/onihata/main.jpg",
-    "thumb": "./assets/species/onihata/thumb.jpg"
+    "image": "./assets/species/onihata/main.webp",
+    "thumb": "./assets/species/onihata/thumb.webp"
   },
   {
     "id": "bora-hata",
-    "nameJa": "ボラハタ",
+    "nameJa": "マダラハタ",
     "localName": "マダラミーバイ",
     "scientificName": "Epinephelus polyphekadion",
     "kingdomGroup": "魚類",
@@ -1889,12 +1894,12 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/43078457/large.jpeg",
     "imageAttribution": "(c) Nigel Marsh, some rights reserved (CC BY-NC), uploaded by Nigel Marsh",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/bora-hata/main.jpg",
-    "thumb": "./assets/species/bora-hata/thumb.jpg"
+    "image": "./assets/species/bora-hata/main.webp",
+    "thumb": "./assets/species/bora-hata/thumb.webp"
   },
   {
     "id": "sumiyaki-hata",
-    "nameJa": "スミヤキハタ",
+    "nameJa": "カンモンハタ",
     "localName": "クロミーバイ",
     "scientificName": "Epinephelus merra",
     "kingdomGroup": "魚類",
@@ -1920,16 +1925,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/sumiyaki-hata/main.jpg",
+    "image": "./assets/species/sumiyaki-hata/main.webp",
     "source": "https://www.fishbase.se/summary/Epinephelus-merra.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/5921949/large.jpg",
     "imageAttribution": "(c) David R, some rights reserved (CC BY-NC), uploaded by David R",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/sumiyaki-hata/thumb.jpg"
+    "thumb": "./assets/species/sumiyaki-hata/thumb.webp"
   },
   {
     "id": "mitsukoshi-hata",
-    "nameJa": "ミツクチハタ",
+    "nameJa": "ニジハタ",
     "localName": "アオミーバイ",
     "scientificName": "Cephalopholis urodeta",
     "kingdomGroup": "魚類",
@@ -1958,8 +1963,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/86924537/large.jpg",
     "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/mitsukoshi-hata/main.jpg",
-    "thumb": "./assets/species/mitsukoshi-hata/thumb.jpg"
+    "image": "./assets/species/mitsukoshi-hata/main.webp",
+    "thumb": "./assets/species/mitsukoshi-hata/thumb.webp"
   },
   {
     "id": "yosuji-fuedai",
@@ -1988,17 +1993,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yosuji-fuedai/main.jpg",
+    "image": "./assets/species/yosuji-fuedai/main.webp",
     "source": "https://www.fishbase.se/summary/Lutjanus-kasmira.html",
     "imageSource": "https://static.inaturalist.org/photos/13952406/large.jpg",
     "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "thumb": "./assets/species/yosuji-fuedai/thumb.jpg"
+    "thumb": "./assets/species/yosuji-fuedai/thumb.webp"
   },
   {
     "id": "rokusen-fuedai",
     "nameJa": "ロクセンフエダイ",
     "localName": "ロクセンフエダイ",
-    "scientificName": "Lutjanus bengalensis",
+    "scientificName": "Lutjanus quinquelineatus",
     "kingdomGroup": "魚類",
     "family": "フエダイ科",
     "categoryId": "fuedai",
@@ -2022,17 +2027,17 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Lutjanus-bengalensis.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/258677479/large.jpg",
-    "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/60483396/large.jpg",
+    "imageAttribution": "(c) Bernat Garrigós, some rights reserved (CC BY-NC), uploaded by Bernat Garrigós",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/rokusen-fuedai/main.jpg",
-    "thumb": "./assets/species/rokusen-fuedai/thumb.jpg"
+    "image": "./assets/species/rokusen-fuedai/main.webp",
+    "thumb": "./assets/species/rokusen-fuedai/thumb.webp"
   },
   {
     "id": "nokogiri-dai",
     "nameJa": "ノコギリダイ",
     "localName": "ノコギリダイ",
-    "scientificName": "Pristipomoides multidens",
+    "scientificName": "Gnathodentex aureolineatus",
     "kingdomGroup": "魚類",
     "family": "フエダイ科",
     "categoryId": "fuedai",
@@ -2057,17 +2062,17 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Pristipomoides-multidens.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/606598/large.jpg",
-    "imageAttribution": "(c) 魚類生態進化研究室, some rights reserved (CC BY-NC)",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/29732496/large.jpg",
+    "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/nokogiri-dai/main.jpg",
-    "thumb": "./assets/species/nokogiri-dai/thumb.jpg"
+    "image": "./assets/species/nokogiri-dai/main.webp",
+    "thumb": "./assets/species/nokogiri-dai/thumb.webp"
   },
   {
     "id": "yokoshima-kurodai",
     "nameJa": "ヨコシマクロダイ",
     "localName": "ヨコシマクロダイ",
-    "scientificName": "Lutjanus fulvus",
+    "scientificName": "Monotaxis grandoculis",
     "kingdomGroup": "魚類",
     "family": "フエダイ科",
     "categoryId": "fuedai",
@@ -2091,17 +2096,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yokoshima-kurodai/main.jpg",
     "source": "https://www.fishbase.se/summary/Lutjanus-fulvus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/342096316/large.jpeg",
-    "imageAttribution": "(c) sea-kangaroo, some rights reserved (CC BY-NC-ND), uploaded by sea-kangaroo",
-    "imageLicense": "cc-by-nc-nd",
-    "thumb": "./assets/species/yokoshima-kurodai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/229645984/large.jpg",
+    "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC), uploaded by François Libert",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/yokoshima-kurodai/main.webp",
+    "thumb": "./assets/species/yokoshima-kurodai/thumb.webp"
   },
   {
     "id": "hana-fuedai",
-    "nameJa": "ハナフエダイ",
-    "localName": "ハナフエダイ",
+    "nameJa": "イッテンフエダイ",
+    "localName": "イッテンフエダイ",
     "scientificName": "Lutjanus monostigma",
     "kingdomGroup": "魚類",
     "family": "フエダイ科",
@@ -2129,14 +2134,14 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/66907/large.jpg",
     "imageAttribution": "(c) Derek Keats, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "image": "./assets/species/hana-fuedai/main.jpg",
-    "thumb": "./assets/species/hana-fuedai/thumb.jpg"
+    "image": "./assets/species/hana-fuedai/main.webp",
+    "thumb": "./assets/species/hana-fuedai/thumb.webp"
   },
   {
     "id": "fuefuki-dai",
     "nameJa": "フエフキダイ",
     "localName": "フエフキ",
-    "scientificName": "Lethrinus obsoletus",
+    "scientificName": "Lethrinus haematopterus",
     "kingdomGroup": "魚類",
     "family": "フエフキダイ科",
     "categoryId": "fuefuki",
@@ -2161,16 +2166,16 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Lethrinus-obsoletus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/915685/large.jpg",
-    "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/223186823/large.jpeg",
+    "imageAttribution": "(c) Gomen See, some rights reserved (CC BY-NC), uploaded by Gomen See",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/fuefuki-dai/main.jpg",
-    "thumb": "./assets/species/fuefuki-dai/thumb.jpg"
+    "image": "./assets/species/fuefuki-dai/main.webp",
+    "thumb": "./assets/species/fuefuki-dai/thumb.webp"
   },
   {
     "id": "yoko-fuefuki",
-    "nameJa": "ヨコシマフエフキ",
-    "localName": "ヨコシマフエフキ",
+    "nameJa": "イトフエフキ",
+    "localName": "イトフエフキ",
     "scientificName": "Lethrinus genivittatus",
     "kingdomGroup": "魚類",
     "family": "フエフキダイ科",
@@ -2199,8 +2204,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/7432026/large.jpg",
     "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/yoko-fuefuki/main.jpg",
-    "thumb": "./assets/species/yoko-fuefuki/thumb.jpg"
+    "image": "./assets/species/yoko-fuefuki/main.webp",
+    "thumb": "./assets/species/yoko-fuefuki/thumb.webp"
   },
   {
     "id": "murasamemongara",
@@ -2230,12 +2235,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/murasamemongara/main.jpg",
+    "image": "./assets/species/murasamemongara/main.webp",
     "source": "https://www.fishbase.se/summary/Rhinecanthus-aculeatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/165427635/large.jpg",
     "imageAttribution": "(c) Francois Libert, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/murasamemongara/thumb.jpg"
+    "thumb": "./assets/species/murasamemongara/thumb.webp"
   },
   {
     "id": "gomamongara",
@@ -2265,12 +2270,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/gomamongara/main.jpg",
+    "image": "./assets/species/gomamongara/main.webp",
     "source": "https://www.fishbase.se/summary/Balistoides-viridescens.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/487803511/large.jpg",
     "imageAttribution": "(c) Frank Krasovec, some rights reserved (CC BY-NC), uploaded by Frank Krasovec",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/gomamongara/thumb.jpg"
+    "thumb": "./assets/species/gomamongara/thumb.webp"
   },
   {
     "id": "tasukimongara",
@@ -2300,11 +2305,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/tasukimongara/main.jpg",
+    "image": "./assets/species/tasukimongara/main.webp",
     "source": "https://www.fishbase.se/summary/Rhinecanthus-rectangulus.html",
     "imageSource": "https://static.inaturalist.org/photos/74277556/large.jpg",
     "imageAttribution": "(c) Tom Barnes, all rights reserved",
-    "thumb": "./assets/species/tasukimongara/thumb.jpg"
+    "thumb": "./assets/species/tasukimongara/thumb.webp"
   },
   {
     "id": "kumadori",
@@ -2333,17 +2338,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kumadori/main.jpg",
+    "image": "./assets/species/kumadori/main.webp",
     "source": "https://www.fishbase.se/summary/Balistapus-undulatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/70598017/large.jpg",
     "imageAttribution": "(c) zsispeo, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/kumadori/thumb.jpg"
+    "thumb": "./assets/species/kumadori/thumb.webp"
   },
   {
     "id": "higenikimongara",
-    "nameJa": "ヒゲニキモンガラ",
-    "localName": "ヒゲニキモンガラ",
+    "nameJa": "ツマジロモンガラ",
+    "localName": "ツマジロモンガラ",
     "scientificName": "Sufflamen chrysopterum",
     "kingdomGroup": "魚類",
     "family": "モンガラカワハギ科",
@@ -2371,12 +2376,12 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/11105416/large.jpg",
     "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/higenikimongara/main.jpg",
-    "thumb": "./assets/species/higenikimongara/thumb.jpg"
+    "image": "./assets/species/higenikimongara/main.webp",
+    "thumb": "./assets/species/higenikimongara/thumb.webp"
   },
   {
     "id": "omongarakawahagi",
-    "nameJa": "オモンガラカワハギ",
+    "nameJa": "キヘリモンガラ",
     "localName": "ニジモンガラ",
     "scientificName": "Pseudobalistes flavimarginatus",
     "kingdomGroup": "魚類",
@@ -2406,8 +2411,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/60178917/large.jpeg",
     "imageAttribution": "(c) J. Martin Crossley, some rights reserved (CC BY-NC-SA), uploaded by J. Martin Crossley",
     "imageLicense": "cc-by-nc-sa",
-    "image": "./assets/species/omongarakawahagi/main.jpg",
-    "thumb": "./assets/species/omongarakawahagi/thumb.jpg"
+    "image": "./assets/species/omongarakawahagi/main.webp",
+    "thumb": "./assets/species/omongarakawahagi/thumb.webp"
   },
   {
     "id": "kitamakura",
@@ -2437,18 +2442,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kitamakura/main.jpg",
+    "image": "./assets/species/kitamakura/main.webp",
     "source": "https://www.fishbase.se/summary/Canthigaster-rivulata.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/287149704/large.jpeg",
     "imageAttribution": "(c) David R, some rights reserved (CC BY-NC), uploaded by David R",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/kitamakura/thumb.jpg"
+    "thumb": "./assets/species/kitamakura/thumb.webp"
   },
   {
     "id": "moyofugu",
     "nameJa": "モヨウフグ",
     "localName": "アーナー",
-    "scientificName": "Arothron hispidus",
+    "scientificName": "Arothron stellatus",
     "kingdomGroup": "魚類",
     "family": "フグ科",
     "categoryId": "fugu",
@@ -2472,18 +2477,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/moyofugu/main.jpg",
     "source": "https://www.fishbase.se/summary/Arothron-hispidus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/487402233/large.jpg",
-    "imageAttribution": "(c) Luis P. B., some rights reserved (CC BY-NC), uploaded by Luis P. B.",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/229406690/large.jpg",
+    "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC), uploaded by François Libert",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/moyofugu/thumb.jpg"
+    "image": "./assets/species/moyofugu/main.webp",
+    "thumb": "./assets/species/moyofugu/thumb.webp"
   },
   {
     "id": "hakofugu",
     "nameJa": "ハコフグ",
     "localName": "バコフグ",
-    "scientificName": "Ostracion cubicus",
+    "scientificName": "Ostracion immaculatus",
     "kingdomGroup": "魚類",
     "family": "ハコフグ科",
     "categoryId": "fugu",
@@ -2507,18 +2512,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hakofugu/main.jpg",
     "source": "https://www.fishbase.se/summary/Ostracion-cubicus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230133564/large.jpg",
-    "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
-    "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/hakofugu/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/2148751/large.jpg",
+    "imageAttribution": "(c) Zack, some rights reserved (CC BY-NC)",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/hakofugu/main.webp",
+    "thumb": "./assets/species/hakofugu/thumb.webp"
   },
   {
     "id": "minami-hakofugu-young",
     "nameJa": "ミナミハコフグ",
     "localName": "バコフグ",
-    "scientificName": "Ostracion meleagris",
+    "scientificName": "Ostracion cubicus",
     "kingdomGroup": "魚類",
     "family": "ハコフグ科",
     "categoryId": "fugu",
@@ -2541,12 +2546,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/minami-hakofugu-young/main.jpg",
     "source": "https://www.fishbase.se/summary/Ostracion-meleagris.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/151064522/large.jpeg",
-    "imageAttribution": "(c) Nigel Marsh, some rights reserved (CC BY-NC), uploaded by Nigel Marsh",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/minami-hakofugu-young/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230133564/large.jpg",
+    "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
+    "imageLicense": "cc-by-nc-sa",
+    "image": "./assets/species/minami-hakofugu-young/main.webp",
+    "thumb": "./assets/species/minami-hakofugu-young/thumb.webp"
   },
   {
     "id": "umadurahahagi",
@@ -2581,8 +2586,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/1159760/large.jpg",
     "imageAttribution": "(c) harum.koh, some rights reserved (CC BY-SA), uploaded by harum.koh",
     "imageLicense": "cc-by-sa",
-    "image": "./assets/species/umadurahahagi/main.jpg",
-    "thumb": "./assets/species/umadurahahagi/thumb.jpg"
+    "image": "./assets/species/umadurahahagi/main.webp",
+    "thumb": "./assets/species/umadurahahagi/thumb.webp"
   },
   {
     "id": "kawahagi",
@@ -2613,12 +2618,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kawahagi/main.jpg",
+    "image": "./assets/species/kawahagi/main.webp",
     "source": "https://www.fishbase.se/summary/Stephanolepis-cirrhifer.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/155855372/large.jpg",
     "imageAttribution": "(c) Gomen See, some rights reserved (CC BY-NC), uploaded by Gomen See",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/kawahagi/thumb.jpg"
+    "thumb": "./assets/species/kawahagi/thumb.webp"
   },
   {
     "id": "soushihagi",
@@ -2648,18 +2653,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/soushihagi/main.jpg",
+    "image": "./assets/species/soushihagi/main.webp",
     "source": "https://www.fishbase.se/summary/Aluterus-scriptus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/145409892/large.jpeg",
     "imageAttribution": "(c) Dennis Rabeling, some rights reserved (CC BY-NC-ND), uploaded by Dennis Rabeling",
     "imageLicense": "cc-by-nc-nd",
-    "thumb": "./assets/species/soushihagi/thumb.jpg"
+    "thumb": "./assets/species/soushihagi/thumb.webp"
   },
   {
     "id": "kinsen-ishimochi",
     "nameJa": "キンセンイシモチ",
     "localName": "キンセンイシモチ",
-    "scientificName": "Ostorhinchus fleurieu",
+    "scientificName": "Ostorhinchus properuptus",
     "kingdomGroup": "魚類",
     "family": "テンジクダイ科",
     "categoryId": "tenjikudai",
@@ -2683,17 +2688,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kinsen-ishimochi/main.jpg",
     "source": "https://www.fishbase.se/summary/Ostorhinchus-fleurieu.html",
-    "imageSource": "https://static.inaturalist.org/photos/28751574/large.jpg",
-    "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "thumb": "./assets/species/kinsen-ishimochi/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/111407975/large.jpg",
+    "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
+    "image": "./assets/species/kinsen-ishimochi/main.webp",
+    "thumb": "./assets/species/kinsen-ishimochi/thumb.webp"
   },
   {
     "id": "nenbuts-dai",
     "nameJa": "ネンブツダイ",
     "localName": "ネンブツダイ",
-    "scientificName": "Ostorhinchus fasciatus",
+    "scientificName": "Ostorhinchus semilineatus",
     "kingdomGroup": "魚類",
     "family": "テンジクダイ科",
     "categoryId": "tenjikudai",
@@ -2717,18 +2722,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nenbuts-dai/main.jpg",
     "source": "https://www.fishbase.se/summary/Ostorhinchus-fasciatus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/300394119/large.jpg",
-    "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/2134697/large.jpg",
+    "imageAttribution": "(c) Zack, some rights reserved (CC BY-NC)",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/nenbuts-dai/thumb.jpg"
+    "image": "./assets/species/nenbuts-dai/main.webp",
+    "thumb": "./assets/species/nenbuts-dai/thumb.webp"
   },
   {
     "id": "ryukyu-yase-amadai",
     "nameJa": "コスジイシモチ",
     "localName": "コスジイシモチ",
-    "scientificName": "Ostorhinchus compressus",
+    "scientificName": "Ostorhinchus endekataenia",
     "kingdomGroup": "魚類",
     "family": "テンジクダイ科",
     "categoryId": "tenjikudai",
@@ -2752,11 +2757,11 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Ostorhinchus-compressus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/715610/large.jpg",
-    "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/525045881/large.jpg",
+    "imageAttribution": "(c) sharkdevotee, some rights reserved (CC BY-NC)",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/ryukyu-yase-amadai/main.jpg",
-    "thumb": "./assets/species/ryukyu-yase-amadai/thumb.jpg"
+    "image": "./assets/species/ryukyu-yase-amadai/main.webp",
+    "thumb": "./assets/species/ryukyu-yase-amadai/thumb.webp"
   },
   {
     "id": "date-haze",
@@ -2786,12 +2791,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/date-haze/main.jpg",
+    "image": "./assets/species/date-haze/main.webp",
     "source": "https://www.fishbase.se/summary/Amblyeleotris-japonica.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/579999011/large.jpg",
     "imageAttribution": "(c) Suzu Sato, some rights reserved (CC BY-NC), uploaded by Suzu Sato",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/date-haze/thumb.jpg"
+    "thumb": "./assets/species/date-haze/thumb.webp"
   },
   {
     "id": "yasha-haze",
@@ -2820,11 +2825,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yasha-haze/main.jpg",
+    "image": "./assets/species/yasha-haze/main.webp",
     "source": "https://www.fishbase.se/summary/Stonogobiops-yasha.html",
     "imageSource": "https://static.inaturalist.org/photos/29333341/large.jpg",
     "imageAttribution": "(c) Shigeru Harazaki, all rights reserved, uploaded by Shigeru Harazaki",
-    "thumb": "./assets/species/yasha-haze/thumb.jpg"
+    "thumb": "./assets/species/yasha-haze/thumb.webp"
   },
   {
     "id": "hatatatehaze",
@@ -2853,16 +2858,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hatatatehaze/main.jpg",
+    "image": "./assets/species/hatatatehaze/main.webp",
     "source": "https://www.fishbase.se/summary/Nemateleotris-magnifica.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/19308589/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/hatatatehaze/thumb.jpg"
+    "thumb": "./assets/species/hatatatehaze/thumb.webp"
   },
   {
     "id": "nagasaki-haze",
-    "nameJa": "ナガサキスズメダイ",
+    "nameJa": "サザナミハゼ",
     "localName": "スジハゼ",
     "scientificName": "Valenciennea longipinnis",
     "kingdomGroup": "魚類",
@@ -2888,12 +2893,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nagasaki-haze/main.jpg",
+    "image": "./assets/species/nagasaki-haze/main.webp",
     "source": "https://www.fishbase.se/summary/Valenciennea-longipinnis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/244307264/large.jpg",
     "imageAttribution": "(c) François Libert, some rights reserved (CC BY-NC-SA), uploaded by François Libert",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/nagasaki-haze/thumb.jpg"
+    "thumb": "./assets/species/nagasaki-haze/thumb.webp"
   },
   {
     "id": "yaeyama-ginpo",
@@ -2922,12 +2927,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yaeyama-ginpo/main.jpg",
+    "image": "./assets/species/yaeyama-ginpo/main.webp",
     "source": "https://www.fishbase.se/summary/Ecsenius-yaeyamaensis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/256459767/large.jpg",
     "imageAttribution": "(c) Wayne and Pam Osborn, some rights reserved (CC BY-NC), uploaded by Wayne and Pam Osborn",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/yaeyama-ginpo/thumb.jpg"
+    "thumb": "./assets/species/yaeyama-ginpo/thumb.webp"
   },
   {
     "id": "mitsukuri-ginpo",
@@ -2960,13 +2965,13 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/2784772/large.jpg",
     "imageAttribution": "(c) Izuzuki, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "image": "./assets/species/mitsukuri-ginpo/main.jpg",
-    "thumb": "./assets/species/mitsukuri-ginpo/thumb.jpg"
+    "image": "./assets/species/mitsukuri-ginpo/main.webp",
+    "thumb": "./assets/species/mitsukuri-ginpo/thumb.webp"
   },
   {
     "id": "oomedama-ginpo",
-    "nameJa": "オオメワラスボ",
-    "localName": "オオメワラスボ",
+    "nameJa": "オグロクロユリハゼ",
+    "localName": "オグロクロユリハゼ",
     "scientificName": "Ptereleotris heteroptera",
     "kingdomGroup": "魚類",
     "family": "ハゼ科",
@@ -2991,18 +2996,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/oomedama-ginpo/main.jpg",
+    "image": "./assets/species/oomedama-ginpo/main.webp",
     "source": "https://www.fishbase.se/summary/Ptereleotris-heteroptera.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/714601/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/oomedama-ginpo/thumb.jpg"
+    "thumb": "./assets/species/oomedama-ginpo/thumb.webp"
   },
   {
     "id": "tatejima-kinchakudai",
     "nameJa": "タテジマキンチャクダイ",
     "localName": "タテジマキンチャクダイ",
-    "scientificName": "Pygoplites diacanthus",
+    "scientificName": "Pomacanthus imperator",
     "kingdomGroup": "魚類",
     "family": "キンチャクダイ科",
     "categoryId": "yakko",
@@ -3025,17 +3030,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/tatejima-kinchakudai/main.jpg",
     "source": "https://www.fishbase.se/summary/Pygoplites-diacanthus.html",
-    "imageSource": "https://static.inaturalist.org/photos/115340876/large.jpg",
-    "imageAttribution": "(c) gernotkunz, all rights reserved, uploaded by gernotkunz",
-    "thumb": "./assets/species/tatejima-kinchakudai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/85515783/large.jpg",
+    "imageAttribution": "(c) Rickard Zerpe, some rights reserved (CC BY)",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/tatejima-kinchakudai/main.webp",
+    "thumb": "./assets/species/tatejima-kinchakudai/thumb.webp"
   },
   {
     "id": "nishikiyakko",
     "nameJa": "ニシキヤッコ",
     "localName": "ニシキヤッコ",
-    "scientificName": "Centropyge vrolikii",
+    "scientificName": "Pygoplites diacanthus",
     "kingdomGroup": "魚類",
     "family": "キンチャクダイ科",
     "categoryId": "yakko",
@@ -3058,11 +3064,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nishikiyakko/main.jpg",
     "source": "https://www.fishbase.se/summary/Centropyge-vrolikii.html",
-    "imageSource": "https://static.inaturalist.org/photos/6318082/large.jpg",
-    "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "thumb": "./assets/species/nishikiyakko/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/115340876/large.jpg",
+    "imageAttribution": "(c) gernotkunz, all rights reserved, uploaded by gernotkunz",
+    "image": "./assets/species/nishikiyakko/main.webp",
+    "thumb": "./assets/species/nishikiyakko/thumb.webp"
   },
   {
     "id": "sazanami-yakko",
@@ -3092,18 +3098,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/sazanami-yakko/main.jpg",
+    "image": "./assets/species/sazanami-yakko/main.webp",
     "source": "https://www.fishbase.se/summary/Pomacanthus-semicirculatus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/5607934/large.jpg",
     "imageAttribution": "(c) Erik Schlögl, some rights reserved (CC BY-NC), uploaded by Erik Schlögl",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/sazanami-yakko/thumb.jpg"
+    "thumb": "./assets/species/sazanami-yakko/thumb.webp"
   },
   {
     "id": "rokusenshaki",
     "nameJa": "ロクセンヤッコ",
     "localName": "ロクセンヤッコ",
-    "scientificName": "Centropyge multifasciata",
+    "scientificName": "Pomacanthus sexstriatus",
     "kingdomGroup": "魚類",
     "family": "キンチャクダイ科",
     "categoryId": "yakko",
@@ -3128,16 +3134,17 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Centropyge-multifasciata.html",
-    "imageSource": "https://static.inaturalist.org/photos/657910885/large.jpg",
-    "imageAttribution": "(c) Philippe Bacchet, all rights reserved, uploaded by Philippe Bacchet",
-    "image": "./assets/species/rokusenshaki/main.jpg",
-    "thumb": "./assets/species/rokusenshaki/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/85516318/large.jpg",
+    "imageAttribution": "(c) Rickard Zerpe, some rights reserved (CC BY)",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/rokusenshaki/main.webp",
+    "thumb": "./assets/species/rokusenshaki/thumb.webp"
   },
   {
     "id": "megane-gonbe",
     "nameJa": "メガネゴンベ",
     "localName": "メガネゴンベ",
-    "scientificName": "Cirrhitichthys oxycephalus",
+    "scientificName": "Paracirrhites arcatus",
     "kingdomGroup": "魚類",
     "family": "ゴンベ科",
     "categoryId": "gonbe",
@@ -3160,12 +3167,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/megane-gonbe/main.jpg",
     "source": "https://www.fishbase.se/summary/Cirrhitichthys-oxycephalus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/66327111/large.jpg",
-    "imageAttribution": "(c) terence zahner, some rights reserved (CC BY-NC), uploaded by terence zahner",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/megane-gonbe/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/101666897/large.jpg",
+    "imageAttribution": "(c) Christopher Chin, all rights reserved, uploaded by Christopher Chin",
+    "image": "./assets/species/megane-gonbe/main.webp",
+    "thumb": "./assets/species/megane-gonbe/thumb.webp"
   },
   {
     "id": "itohiki-gonbe",
@@ -3195,12 +3201,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/itohiki-gonbe/main.jpg",
+    "image": "./assets/species/itohiki-gonbe/main.webp",
     "source": "https://www.fishbase.se/summary/Oxycirrhites-typus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/2427935/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/itohiki-gonbe/thumb.jpg"
+    "thumb": "./assets/species/itohiki-gonbe/thumb.webp"
   },
   {
     "id": "kingyo-hanadai",
@@ -3229,16 +3235,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kingyo-hanadai/main.jpg",
+    "image": "./assets/species/kingyo-hanadai/main.webp",
     "source": "https://www.fishbase.se/summary/Pseudanthias-squamipinnis.html",
     "imageSource": "https://static.inaturalist.org/photos/12505596/large.jpg",
     "imageAttribution": "(c) Ian Shaw, all rights reserved, uploaded by Ian Shaw",
-    "thumb": "./assets/species/kingyo-hanadai/thumb.jpg"
+    "thumb": "./assets/species/kingyo-hanadai/thumb.webp"
   },
   {
     "id": "akahana-hanadai",
-    "nameJa": "アカハナハナダイ",
-    "localName": "アカハナハナダイ",
+    "nameJa": "アカネハナゴイ",
+    "localName": "アカネハナゴイ",
     "scientificName": "Pseudanthias dispar",
     "kingdomGroup": "魚類",
     "family": "ハタ科",
@@ -3262,12 +3268,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/akahana-hanadai/main.jpg",
+    "image": "./assets/species/akahana-hanadai/main.webp",
     "source": "https://www.fishbase.se/summary/Pseudanthias-dispar.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/598461/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/akahana-hanadai/thumb.jpg"
+    "thumb": "./assets/species/akahana-hanadai/thumb.webp"
   },
   {
     "id": "umeiro-modoki",
@@ -3297,12 +3303,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/umeiro-modoki/main.jpg",
+    "image": "./assets/species/umeiro-modoki/main.webp",
     "source": "https://www.fishbase.se/summary/Caesio-teres.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/551948/large.jpg",
     "imageAttribution": "(c) Mark Rosenstein, some rights reserved (CC BY-NC), uploaded by Mark Rosenstein",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/umeiro-modoki/thumb.jpg"
+    "thumb": "./assets/species/umeiro-modoki/thumb.webp"
   },
   {
     "id": "rounin-aji",
@@ -3332,12 +3338,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/rounin-aji/main.jpg",
+    "image": "./assets/species/rounin-aji/main.webp",
     "source": "https://www.fishbase.se/summary/Caranx-ignobilis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/11911542/large.jpg",
     "imageAttribution": "(c) Nikolai Vladimirov, some rights reserved (CC BY-NC), uploaded by Nikolai Vladimirov",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/rounin-aji/thumb.jpg"
+    "thumb": "./assets/species/rounin-aji/thumb.webp"
   },
   {
     "id": "kasumi-aji",
@@ -3367,12 +3373,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kasumi-aji/main.jpg",
+    "image": "./assets/species/kasumi-aji/main.webp",
     "source": "https://www.fishbase.se/summary/Caranx-melampygus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/608164205/large.jpg",
     "imageAttribution": "(c) Rickard Zerpe, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "thumb": "./assets/species/kasumi-aji/thumb.jpg"
+    "thumb": "./assets/species/kasumi-aji/thumb.webp"
   },
   {
     "id": "okizayori",
@@ -3407,8 +3413,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/70924450/large.jpg",
     "imageAttribution": "(c) \nPhilippe Bourjon, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "image": "./assets/species/okizayori/main.jpg",
-    "thumb": "./assets/species/okizayori/thumb.jpg"
+    "image": "./assets/species/okizayori/main.webp",
+    "thumb": "./assets/species/okizayori/thumb.webp"
   },
   {
     "id": "bora",
@@ -3438,16 +3444,16 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/bora/main.jpg",
+    "image": "./assets/species/bora/main.webp",
     "source": "https://www.fishbase.se/summary/Mugil-cephalus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/11976021/large.jpeg",
     "imageAttribution": "(c) Ian Banks, some rights reserved (CC BY-NC), uploaded by Ian Banks",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/bora/thumb.jpg"
+    "thumb": "./assets/species/bora/thumb.webp"
   },
   {
     "id": "hirenaga-aji",
-    "nameJa": "ヒレナガアジ",
+    "nameJa": "ウマヅラアジ",
     "localName": "ガーラ",
     "scientificName": "Alectis indica",
     "kingdomGroup": "魚類",
@@ -3477,13 +3483,13 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/49869809/large.jpg",
     "imageAttribution": "(c) Gordon Black, some rights reserved (CC BY-NC), uploaded by Gordon Black",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/hirenaga-aji/main.jpg",
-    "thumb": "./assets/species/hirenaga-aji/thumb.jpg"
+    "image": "./assets/species/hirenaga-aji/main.webp",
+    "thumb": "./assets/species/hirenaga-aji/thumb.webp"
   },
   {
     "id": "yagara",
-    "nameJa": "ヤガラ",
-    "localName": "ヤガラ",
+    "nameJa": "アオヤガラ",
+    "localName": "アオヤガラ",
     "scientificName": "Fistularia commersonii",
     "kingdomGroup": "魚類",
     "family": "ヤガラ科",
@@ -3508,12 +3514,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yagara/main.jpg",
+    "image": "./assets/species/yagara/main.webp",
     "source": "https://www.fishbase.se/summary/Fistularia-commersonii.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/564563445/large.jpg",
     "imageAttribution": "(c) francescodj, some rights reserved (CC BY-NC)",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/yagara/thumb.jpg"
+    "thumb": "./assets/species/yagara/thumb.webp"
   },
   {
     "id": "ao-umigame",
@@ -3544,12 +3550,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ao-umigame/main.jpg",
+    "image": "./assets/species/ao-umigame/main.webp",
     "source": "https://www.fishbase.se/summary/Chelonia-mydas.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/675226735/large.jpg",
     "imageAttribution": "(c) Luis P. B., some rights reserved (CC BY-NC), uploaded by Luis P. B.",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/ao-umigame/thumb.jpg"
+    "thumb": "./assets/species/ao-umigame/thumb.webp"
   },
   {
     "id": "taimai",
@@ -3579,12 +3585,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/taimai/main.jpg",
+    "image": "./assets/species/taimai/main.webp",
     "source": "https://www.fishbase.se/summary/Eretmochelys-imbricata.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/9696846/large.jpg",
     "imageAttribution": "(c) Kevin Bryant, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/taimai/thumb.jpg"
+    "thumb": "./assets/species/taimai/thumb.webp"
   },
   {
     "id": "aka-umigame",
@@ -3614,18 +3620,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/aka-umigame/main.jpg",
+    "image": "./assets/species/aka-umigame/main.webp",
     "source": "https://www.fishbase.se/summary/Caretta-caretta.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/176772831/large.jpeg",
     "imageAttribution": "(c) Roberto Pillon, some rights reserved (CC BY-NC), uploaded by Roberto Pillon",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/aka-umigame/thumb.jpg"
+    "thumb": "./assets/species/aka-umigame/thumb.webp"
   },
   {
     "id": "enhorned-acropora",
     "nameJa": "エダコモンサンゴ",
     "localName": "エダサンゴ",
-    "scientificName": "Acropora muricata",
+    "scientificName": "Montipora digitata",
     "kingdomGroup": "サンゴ",
     "family": "ミドリイシ科",
     "categoryId": "midoriishi",
@@ -3649,11 +3655,11 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Acropora-muricata.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/6731575/large.jpg",
-    "imageAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/60574622/large.jpeg",
+    "imageAttribution": "(c) Thomas Mesaglio, some rights reserved (CC BY), uploaded by Thomas Mesaglio",
     "imageLicense": "cc-by",
-    "image": "./assets/species/enhorned-acropora/main.jpg",
-    "thumb": "./assets/species/enhorned-acropora/thumb.jpg"
+    "image": "./assets/species/enhorned-acropora/main.webp",
+    "thumb": "./assets/species/enhorned-acropora/thumb.webp"
   },
   {
     "id": "tabletop-acropora",
@@ -3682,18 +3688,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/tabletop-acropora/main.jpg",
+    "image": "./assets/species/tabletop-acropora/main.webp",
     "source": "https://www.fishbase.se/summary/Acropora-hyacinthus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/1950007/large.jpg",
     "imageAttribution": "(c) MDC Seamarc Maldives, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "thumb": "./assets/species/tabletop-acropora/thumb.jpg"
+    "thumb": "./assets/species/tabletop-acropora/thumb.webp"
   },
   {
     "id": "staghorn-acropora",
     "nameJa": "シカヅノサンゴ",
     "localName": "ツノサンゴ",
-    "scientificName": "Acropora cervicornis",
+    "scientificName": "Acropora muricata",
     "kingdomGroup": "サンゴ",
     "family": "ミドリイシ科",
     "categoryId": "midoriishi",
@@ -3717,10 +3723,11 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Acropora-cervicornis.html",
-    "imageSource": "https://static.inaturalist.org/photos/164610234/large.jpg",
-    "imageAttribution": "(c) pleahy, all rights reserved",
-    "image": "./assets/species/staghorn-acropora/main.jpg",
-    "thumb": "./assets/species/staghorn-acropora/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/6731575/large.jpg",
+    "imageAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/staghorn-acropora/main.webp",
+    "thumb": "./assets/species/staghorn-acropora/thumb.webp"
   },
   {
     "id": "porites-lobata",
@@ -3750,12 +3757,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/porites-lobata/main.jpg",
+    "image": "./assets/species/porites-lobata/main.webp",
     "source": "https://www.sealifebase.ca/summary/Porites-lobata.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/476701993/large.jpg",
     "imageAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "thumb": "./assets/species/porites-lobata/thumb.jpg"
+    "thumb": "./assets/species/porites-lobata/thumb.webp"
   },
   {
     "id": "galaxea-fascicularis",
@@ -3784,11 +3791,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/galaxea-fascicularis/main.jpg",
+    "image": "./assets/species/galaxea-fascicularis/main.webp",
     "source": "https://www.sealifebase.ca/summary/Galaxea-fascicularis.html",
     "imageSource": "https://static.inaturalist.org/photos/38707032/large.jpg",
     "imageAttribution": "(c) Jeff Stauffer, all rights reserved, uploaded by Jeff Stauffer",
-    "thumb": "./assets/species/galaxea-fascicularis/thumb.jpg"
+    "thumb": "./assets/species/galaxea-fascicularis/thumb.webp"
   },
   {
     "id": "favia-speciosa",
@@ -3822,8 +3829,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/258649325/large.jpg",
     "imageAttribution": "(c) Tomas Cedhagen, some rights reserved (CC BY-NC), uploaded by Tomas Cedhagen",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/favia-speciosa/main.jpg",
-    "thumb": "./assets/species/favia-speciosa/thumb.jpg"
+    "image": "./assets/species/favia-speciosa/main.webp",
+    "thumb": "./assets/species/favia-speciosa/thumb.webp"
   },
   {
     "id": "pocillopora-damicornis",
@@ -3853,17 +3860,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/pocillopora-damicornis/main.jpg",
+    "image": "./assets/species/pocillopora-damicornis/main.webp",
     "source": "https://www.sealifebase.ca/summary/Pocillopora-damicornis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/65184323/large.jpeg",
     "imageAttribution": "(c) omkarb, some rights reserved (CC BY-NC)",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/pocillopora-damicornis/thumb.jpg"
+    "thumb": "./assets/species/pocillopora-damicornis/thumb.webp"
   },
   {
     "id": "sarcophyton-trocheliophorum",
-    "nameJa": "ウミキノコ",
-    "localName": "ウミキノコ",
+    "nameJa": "ヒダベリウミキノコ",
+    "localName": "ヒダベリウミキノコ",
     "scientificName": "Sarcophyton trocheliophorum",
     "kingdomGroup": "サンゴ",
     "family": "ナギサトサカ科",
@@ -3892,8 +3899,8 @@
   },
   {
     "id": "lobophyllia-hemprichii",
-    "nameJa": "コモンサンゴ",
-    "localName": "コモンサンゴ",
+    "nameJa": "オオハナガタサンゴ",
+    "localName": "オオハナガタサンゴ",
     "scientificName": "Lobophyllia hemprichii",
     "kingdomGroup": "サンゴ",
     "family": "キクメイシ科",
@@ -3921,8 +3928,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/67514767/large.jpeg",
     "imageAttribution": "(c) Malaika Mathew Chawla, some rights reserved (CC BY), uploaded by Malaika Mathew Chawla",
     "imageLicense": "cc-by",
-    "image": "./assets/species/lobophyllia-hemprichii/main.jpg",
-    "thumb": "./assets/species/lobophyllia-hemprichii/thumb.jpg"
+    "image": "./assets/species/lobophyllia-hemprichii/main.webp",
+    "thumb": "./assets/species/lobophyllia-hemprichii/thumb.webp"
   },
   {
     "id": "sinularia-flexibilis",
@@ -3955,8 +3962,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/30905792/large.jpeg",
     "imageAttribution": "(c) Tia Offner, some rights reserved (CC BY), uploaded by Tia Offner",
     "imageLicense": "cc-by",
-    "image": "./assets/species/sinularia-flexibilis/main.jpg",
-    "thumb": "./assets/species/sinularia-flexibilis/thumb.jpg"
+    "image": "./assets/species/sinularia-flexibilis/main.webp",
+    "thumb": "./assets/species/sinularia-flexibilis/thumb.webp"
   },
   {
     "id": "ao-umiushi",
@@ -3985,17 +3992,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ao-umiushi/main.jpg",
+    "image": "./assets/species/ao-umiushi/main.webp",
     "source": "https://www.seaslugforum.net/find/hypsfest",
     "imageSource": "https://static.inaturalist.org/photos/84373194/large.jpg",
     "imageAttribution": "(c) Carol Kwok, all rights reserved, uploaded by Carol Kwok",
-    "thumb": "./assets/species/ao-umiushi/thumb.jpg"
+    "thumb": "./assets/species/ao-umiushi/thumb.webp"
   },
   {
     "id": "mikado-umiushi",
     "nameJa": "ミカドウミウシ",
     "localName": "ミカドウミウシ",
-    "scientificName": "Tambja morosa",
+    "scientificName": "Hexabranchus sanguineus",
     "kingdomGroup": "ウミウシ",
     "family": "ドーリス科",
     "categoryId": "umiushi",
@@ -4019,10 +4026,10 @@
       "feature"
     ],
     "source": "https://www.inaturalist.org/taxa/130800-Tambja-morosa",
-    "imageSource": "https://static.inaturalist.org/photos/230588716/large.jpg",
-    "imageAttribution": "(c) Bob Edgar, all rights reserved, uploaded by Bob Edgar",
-    "image": "./assets/species/mikado-umiushi/main.jpg",
-    "thumb": "./assets/species/mikado-umiushi/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/229212281/large.jpg",
+    "imageAttribution": "(c) Daniel Benák, all rights reserved, uploaded by Daniel Benák",
+    "image": "./assets/species/mikado-umiushi/main.webp",
+    "thumb": "./assets/species/mikado-umiushi/thumb.webp"
   },
   {
     "id": "udefuri-tsunozaya-umiushi",
@@ -4051,18 +4058,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/udefuri-tsunozaya-umiushi/main.jpg",
+    "image": "./assets/species/udefuri-tsunozaya-umiushi/main.webp",
     "source": "https://www.inaturalist.org/taxa/130829-Thecacera-pacifica",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/163550706/large.jpg",
     "imageAttribution": "(c) Nemo's great uncle, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/udefuri-tsunozaya-umiushi/thumb.jpg"
+    "thumb": "./assets/species/udefuri-tsunozaya-umiushi/thumb.webp"
   },
   {
     "id": "koibo-umiushi",
     "nameJa": "コイボウミウシ",
     "localName": "コイボウミウシ",
-    "scientificName": "Jorunna funebris",
+    "scientificName": "Phyllidiella pustulosa",
     "kingdomGroup": "ウミウシ",
     "family": "ドーリス科",
     "categoryId": "umiushi",
@@ -4086,12 +4093,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/koibo-umiushi/main.jpg",
     "source": "https://www.inaturalist.org/taxa/130797-Jorunna-funebris",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/10994316/large.jpeg",
-    "imageAttribution": "(c) Tine Kinn Kvamme, some rights reserved (CC BY), uploaded by Tine Kinn Kvamme",
-    "imageLicense": "cc-by",
-    "thumb": "./assets/species/koibo-umiushi/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/179835425/large.jpg",
+    "imageAttribution": "(c) Rafi Amar, some rights reserved (CC BY-NC), uploaded by Rafi Amar",
+    "imageLicense": "cc-by-nc",
+    "image": "./assets/species/koibo-umiushi/main.webp",
+    "thumb": "./assets/species/koibo-umiushi/thumb.webp"
   },
   {
     "id": "kumadori-umiushi",
@@ -4124,14 +4131,14 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/5622395/large.jpg",
     "imageAttribution": "(c) Richard Ling, some rights reserved (CC BY-NC-ND)",
     "imageLicense": "cc-by-nc-nd",
-    "image": "./assets/species/kumadori-umiushi/main.jpg",
-    "thumb": "./assets/species/kumadori-umiushi/thumb.jpg"
+    "image": "./assets/species/kumadori-umiushi/main.webp",
+    "thumb": "./assets/species/kumadori-umiushi/thumb.webp"
   },
   {
     "id": "nishiki-umiushi",
     "nameJa": "ニシキウミウシ",
     "localName": "ニシキウミウシ",
-    "scientificName": "Chromodoris magnifica",
+    "scientificName": "Ceratosoma trilobatum",
     "kingdomGroup": "ウミウシ",
     "family": "イロウミウシ科",
     "categoryId": "umiushi",
@@ -4154,12 +4161,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/nishiki-umiushi/main.jpg",
     "source": "https://www.inaturalist.org/taxa/130795-Chromodoris-magnifica",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/131338167/large.jpg",
-    "imageAttribution": "(c) Jean-Paul Cassez, some rights reserved (CC BY-NC), uploaded by Jean-Paul Cassez",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/32160831/large.jpg",
+    "imageAttribution": "(c) Erwin Koehler, some rights reserved (CC BY-NC), uploaded by Erwin Koehler",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/nishiki-umiushi/thumb.jpg"
+    "image": "./assets/species/nishiki-umiushi/main.webp",
+    "thumb": "./assets/species/nishiki-umiushi/thumb.webp"
   },
   {
     "id": "santa-umiushi",
@@ -4192,13 +4199,13 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/32160831/large.jpg",
     "imageAttribution": "(c) Erwin Koehler, some rights reserved (CC BY-NC), uploaded by Erwin Koehler",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/santa-umiushi/main.jpg",
-    "thumb": "./assets/species/santa-umiushi/thumb.jpg"
+    "image": "./assets/species/santa-umiushi/main.webp",
+    "thumb": "./assets/species/santa-umiushi/thumb.webp"
   },
   {
     "id": "yuki-umiushi",
-    "nameJa": "ユキウミウシ",
-    "localName": "ユキウミウシ",
+    "nameJa": "アカボシウミウシ",
+    "localName": "アカボシウミウシ",
     "scientificName": "Gymnodoris alba",
     "kingdomGroup": "ウミウシ",
     "family": "ドーリス科",
@@ -4227,13 +4234,13 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/1360022/large.jpg",
     "imageAttribution": "(c) Steve Childs, some rights reserved (CC BY)",
     "imageLicense": "cc-by",
-    "image": "./assets/species/yuki-umiushi/main.jpg",
-    "thumb": "./assets/species/yuki-umiushi/thumb.jpg"
+    "image": "./assets/species/yuki-umiushi/main.webp",
+    "thumb": "./assets/species/yuki-umiushi/thumb.webp"
   },
   {
     "id": "shako-gai",
-    "nameJa": "シャコガイ",
-    "localName": "シャコガイ",
+    "nameJa": "ヒレシャコガイ",
+    "localName": "ヒレシャコガイ",
     "scientificName": "Tridacna squamosa",
     "kingdomGroup": "貝・巻貝",
     "family": "シャコガイ科",
@@ -4258,12 +4265,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/shako-gai/main.jpg",
+    "image": "./assets/species/shako-gai/main.webp",
     "source": "https://www.sealifebase.ca/summary/Tridacna-squamosa.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/238649391/large.jpg",
     "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/shako-gai/thumb.jpg"
+    "thumb": "./assets/species/shako-gai/thumb.webp"
   },
   {
     "id": "takarahai-yamato",
@@ -4294,18 +4301,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/takarahai-yamato/main.jpg",
+    "image": "./assets/species/takarahai-yamato/main.webp",
     "source": "https://www.sealifebase.ca/summary/Monetaria-annulus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/67574929/large.jpg",
     "imageAttribution": "(c) bathyporeia, some rights reserved (CC BY-NC-ND)",
     "imageLicense": "cc-by-nc-nd",
-    "thumb": "./assets/species/takarahai-yamato/thumb.jpg"
+    "thumb": "./assets/species/takarahai-yamato/thumb.webp"
   },
   {
     "id": "imogai-oji",
     "nameJa": "オウサマイモ",
     "localName": "イモガイ",
-    "scientificName": "Conus geographus",
+    "scientificName": "Conus litteratus",
     "kingdomGroup": "貝・巻貝",
     "family": "イモガイ科",
     "categoryId": "kai",
@@ -4329,12 +4336,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/imogai-oji/main.jpg",
     "source": "https://www.sealifebase.ca/summary/Conus-geographus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/478025983/large.jpeg",
-    "imageAttribution": "(c) Febrianne S, some rights reserved (CC BY-NC), uploaded by Febrianne S",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/imogai-oji/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/123172496/large.jpg",
+    "imageAttribution": "(c) Takaaki Hattori, some rights reserved (CC BY), uploaded by Takaaki Hattori",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/imogai-oji/main.webp",
+    "thumb": "./assets/species/imogai-oji/thumb.webp"
   },
   {
     "id": "kumogai",
@@ -4364,12 +4371,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kumogai/main.jpg",
+    "image": "./assets/species/kumogai/main.webp",
     "source": "https://www.sealifebase.ca/summary/Lambis-lambis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/189313552/large.jpg",
     "imageAttribution": "(c) Ria Tan, some rights reserved (CC BY-NC-ND)",
     "imageLicense": "cc-by-nc-nd",
-    "thumb": "./assets/species/kumogai/thumb.jpg"
+    "thumb": "./assets/species/kumogai/thumb.webp"
   },
   {
     "id": "hora-gai",
@@ -4399,18 +4406,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hora-gai/main.jpg",
+    "image": "./assets/species/hora-gai/main.webp",
     "source": "https://www.sealifebase.ca/summary/Charonia-tritonis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/184046569/large.jpg",
     "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/hora-gai/thumb.jpg"
+    "thumb": "./assets/species/hora-gai/thumb.webp"
   },
   {
     "id": "suijigai",
     "nameJa": "スイジガイ",
     "localName": "スイジガイ",
-    "scientificName": "Lambis chiragra",
+    "scientificName": "Harpago chiragra",
     "kingdomGroup": "貝・巻貝",
     "family": "クモガイ科",
     "categoryId": "kai",
@@ -4434,17 +4441,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/suijigai/main.jpg",
     "source": "https://www.sealifebase.ca/summary/Lambis-chiragra.html",
     "imageSource": "https://static.inaturalist.org/photos/82148630/large.jpeg",
     "imageAttribution": "(c) A E, all rights reserved, uploaded by A E",
-    "thumb": "./assets/species/suijigai/thumb.jpg"
+    "image": "./assets/species/suijigai/main.webp",
+    "thumb": "./assets/species/suijigai/thumb.webp"
   },
   {
     "id": "mitsukuri-imogai",
     "nameJa": "アンボンクロザメ",
     "localName": "イモガイ",
-    "scientificName": "Conus textile",
+    "scientificName": "Conus litteratus",
     "kingdomGroup": "貝・巻貝",
     "family": "イモガイ科",
     "categoryId": "kai",
@@ -4468,12 +4475,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/mitsukuri-imogai/main.jpg",
     "source": "https://www.sealifebase.ca/summary/Conus-textile.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230939052/large.jpg",
-    "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/mitsukuri-imogai/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/123172496/large.jpg",
+    "imageAttribution": "(c) Takaaki Hattori, some rights reserved (CC BY), uploaded by Takaaki Hattori",
+    "imageLicense": "cc-by",
+    "image": "./assets/species/mitsukuri-imogai/main.webp",
+    "thumb": "./assets/species/mitsukuri-imogai/thumb.webp"
   },
   {
     "id": "otohime-ebi",
@@ -4502,12 +4509,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/otohime-ebi/main.jpg",
+    "image": "./assets/species/otohime-ebi/main.webp",
     "source": "https://www.sealifebase.ca/summary/Stenopus-hispidus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/277105988/large.jpg",
     "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/otohime-ebi/thumb.jpg"
+    "thumb": "./assets/species/otohime-ebi/thumb.webp"
   },
   {
     "id": "akashima-shirohige-ebi",
@@ -4536,18 +4543,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/akashima-shirohige-ebi/main.jpg",
+    "image": "./assets/species/akashima-shirohige-ebi/main.webp",
     "source": "https://www.sealifebase.ca/summary/Lysmata-amboinensis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/109110752/large.jpeg",
     "imageAttribution": "(c) Franco Colnago, some rights reserved (CC BY-NC), uploaded by Franco Colnago",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/akashima-shirohige-ebi/thumb.jpg"
+    "thumb": "./assets/species/akashima-shirohige-ebi/thumb.webp"
   },
   {
     "id": "teppou-ebi",
     "nameJa": "テッポウエビ",
     "localName": "テッポウエビ",
-    "scientificName": "Alpheus bellulus",
+    "scientificName": "Alpheus brevicristatus",
     "kingdomGroup": "甲殻類",
     "family": "テッポウエビ科",
     "categoryId": "kousoku",
@@ -4571,12 +4578,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/teppou-ebi/main.jpg",
     "source": "https://www.sealifebase.ca/summary/Alpheus-bellulus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/276393597/large.jpg",
-    "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
-    "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/teppou-ebi/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/3322528/large.JPG",
+    "imageAttribution": "(c) Sunnetchan, some rights reserved (CC BY-NC-ND), uploaded by Sunnetchan",
+    "imageLicense": "cc-by-nc-nd",
+    "image": "./assets/species/teppou-ebi/main.webp",
+    "thumb": "./assets/species/teppou-ebi/thumb.webp"
   },
   {
     "id": "ise-ebi",
@@ -4605,12 +4612,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ise-ebi/main.jpg",
+    "image": "./assets/species/ise-ebi/main.webp",
     "source": "https://www.sealifebase.ca/summary/Panulirus-japonicus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/397961497/large.jpg",
     "imageAttribution": "(c) Josy Lai, some rights reserved (CC BY-NC), uploaded by Josy Lai",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/ise-ebi/thumb.jpg"
+    "thumb": "./assets/species/ise-ebi/thumb.webp"
   },
   {
     "id": "sango-gani",
@@ -4639,17 +4646,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/sango-gani/main.jpg",
+    "image": "./assets/species/sango-gani/main.webp",
     "source": "https://www.sealifebase.ca/summary/Trapezia-cymodoce.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/114513564/large.jpg",
     "imageAttribution": "(c) John Sear, some rights reserved (CC BY-NC), uploaded by John Sear",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/sango-gani/thumb.jpg"
+    "thumb": "./assets/species/sango-gani/thumb.webp"
   },
   {
     "id": "kakure-ebi",
-    "nameJa": "カクレエビ",
-    "localName": "カクレエビ",
+    "nameJa": "イソギンチャクカクレエビ",
+    "localName": "イソギンチャクカクレエビ",
     "scientificName": "Periclimenes brevicarpalis",
     "kingdomGroup": "甲殻類",
     "family": "テナガエビ科",
@@ -4673,12 +4680,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/kakure-ebi/main.jpg",
+    "image": "./assets/species/kakure-ebi/main.webp",
     "source": "https://www.sealifebase.ca/summary/Periclimenes-brevicarpalis.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/447179/large.jpg",
     "imageAttribution": "(c) erikschlogl, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/kakure-ebi/thumb.jpg"
+    "thumb": "./assets/species/kakure-ebi/thumb.webp"
   },
   {
     "id": "yadokari",
@@ -4709,17 +4716,17 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/yadokari/main.jpg",
+    "image": "./assets/species/yadokari/main.webp",
     "source": "https://www.sealifebase.ca/summary/Pagurus-minutus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/443371828/large.jpg",
     "imageAttribution": "(c) Eiji Myorin, some rights reserved (CC BY-NC), uploaded by Eiji Myorin",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/yadokari/thumb.jpg"
+    "thumb": "./assets/species/yadokari/thumb.webp"
   },
   {
     "id": "shishamo-ebi",
-    "nameJa": "シシャモエビ",
-    "localName": "シシャモエビ",
+    "nameJa": "フシウデサンゴモエビ",
+    "localName": "フシウデサンゴモエビ",
     "scientificName": "Saron marmoratus",
     "kingdomGroup": "甲殻類",
     "family": "モエビ科",
@@ -4743,18 +4750,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/shishamo-ebi/main.jpg",
+    "image": "./assets/species/shishamo-ebi/main.webp",
     "source": "https://www.sealifebase.ca/summary/Saron-marmoratus.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/317575495/large.jpg",
     "imageAttribution": "(c) Kristin Anderson, some rights reserved (CC BY-NC), uploaded by Kristin Anderson",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/shishamo-ebi/thumb.jpg"
+    "thumb": "./assets/species/shishamo-ebi/thumb.webp"
   },
   {
     "id": "nise-kuro-namako",
     "nameJa": "ニセクロナマコ",
     "localName": "クロナマコ",
-    "scientificName": "Holothuria atra",
+    "scientificName": "Holothuria leucospilota",
     "kingdomGroup": "棘皮動物",
     "family": "クロナマコ科",
     "categoryId": "namako",
@@ -4779,17 +4786,17 @@
       "feature"
     ],
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=210731",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/163566549/large.jpeg",
-    "imageAttribution": "(c) Amaury Durbano, some rights reserved (CC BY-NC), uploaded by Amaury Durbano",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/59534946/large.jpg",
+    "imageAttribution": "(c) budak, some rights reserved (CC BY-NC), uploaded by budak",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/nise-kuro-namako/main.jpg",
-    "thumb": "./assets/species/nise-kuro-namako/thumb.jpg"
+    "image": "./assets/species/nise-kuro-namako/main.webp",
+    "thumb": "./assets/species/nise-kuro-namako/thumb.webp"
   },
   {
     "id": "kuro-namako",
     "nameJa": "クロナマコ",
     "localName": "クロナマコ",
-    "scientificName": "Holothuria leucospilota",
+    "scientificName": "Holothuria atra",
     "kingdomGroup": "棘皮動物",
     "family": "クロナマコ科",
     "categoryId": "namako",
@@ -4814,11 +4821,11 @@
       "feature"
     ],
     "source": "https://www.fishbase.se/summary/Holothuria-leucospilota.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/59534946/large.jpg",
-    "imageAttribution": "(c) budak, some rights reserved (CC BY-NC), uploaded by budak",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/163566549/large.jpeg",
+    "imageAttribution": "(c) Amaury Durbano, some rights reserved (CC BY-NC), uploaded by Amaury Durbano",
     "imageLicense": "cc-by-nc",
-    "image": "./assets/species/kuro-namako/main.jpg",
-    "thumb": "./assets/species/kuro-namako/thumb.jpg"
+    "image": "./assets/species/kuro-namako/main.webp",
+    "thumb": "./assets/species/kuro-namako/thumb.webp"
   },
   {
     "id": "torafushinamako",
@@ -4852,8 +4859,8 @@
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/3221200/large.jpg",
     "imageAttribution": "(c) http://www.colours.dk/, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "image": "./assets/species/torafushinamako/main.jpg",
-    "thumb": "./assets/species/torafushinamako/thumb.jpg"
+    "image": "./assets/species/torafushinamako/main.webp",
+    "thumb": "./assets/species/torafushinamako/thumb.webp"
   },
   {
     "id": "ao-hitode",
@@ -4882,11 +4889,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ao-hitode/main.jpg",
+    "image": "./assets/species/ao-hitode/main.webp",
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=213213",
     "imageSource": "https://static.inaturalist.org/photos/225162251/large.jpg",
     "imageAttribution": "(c) Bob Edgar, all rights reserved, uploaded by Bob Edgar",
-    "thumb": "./assets/species/ao-hitode/thumb.jpg"
+    "thumb": "./assets/species/ao-hitode/thumb.webp"
   },
   {
     "id": "kobu-hitode",
@@ -4919,8 +4926,8 @@
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=213441",
     "imageSource": "https://static.inaturalist.org/photos/59226/large.jpg",
     "imageAttribution": "(c) tengumaster89, all rights reserved",
-    "image": "./assets/species/kobu-hitode/main.jpg",
-    "thumb": "./assets/species/kobu-hitode/thumb.jpg"
+    "image": "./assets/species/kobu-hitode/main.webp",
+    "thumb": "./assets/species/kobu-hitode/thumb.webp"
   },
   {
     "id": "oni-hitode",
@@ -4949,12 +4956,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/oni-hitode/main.jpg",
+    "image": "./assets/species/oni-hitode/main.webp",
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=213378",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/11943164/large.jpeg",
     "imageAttribution": "(c) Mahadi Mohammad, some rights reserved (CC BY-NC), uploaded by Mahadi Mohammad",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/oni-hitode/thumb.jpg"
+    "thumb": "./assets/species/oni-hitode/thumb.webp"
   },
   {
     "id": "gangaze",
@@ -4984,18 +4991,18 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/gangaze/main.jpg",
+    "image": "./assets/species/gangaze/main.webp",
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=513793",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/77704758/large.jpg",
     "imageAttribution": "(c) Patrick Randall, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/gangaze/thumb.jpg"
+    "thumb": "./assets/species/gangaze/thumb.webp"
   },
   {
     "id": "rappa-uni",
     "nameJa": "ラッパウニ",
     "localName": "ラッパウニ",
-    "scientificName": "Tripneustes gratilla",
+    "scientificName": "Toxopneustes pileolus",
     "kingdomGroup": "棘皮動物",
     "family": "オオバフンウニ科",
     "categoryId": "uni",
@@ -5020,17 +5027,17 @@
       "feature"
     ],
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=513830",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/106475573/large.jpeg",
-    "imageAttribution": "(c) Franco Colnago, some rights reserved (CC BY-NC), uploaded by Franco Colnago",
-    "imageLicense": "cc-by-nc",
-    "image": "./assets/species/rappa-uni/main.jpg",
-    "thumb": "./assets/species/rappa-uni/thumb.jpg"
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/70522275/large.jpg",
+    "imageAttribution": "(c) Nhobgood, some rights reserved (CC BY-SA)",
+    "imageLicense": "cc-by-sa",
+    "image": "./assets/species/rappa-uni/main.webp",
+    "thumb": "./assets/species/rappa-uni/thumb.webp"
   },
   {
     "id": "mizukurage",
     "nameJa": "ミズクラゲ",
     "localName": "クラゲ",
-    "scientificName": "Aurelia aurita",
+    "scientificName": "Aurelia coerulea",
     "kingdomGroup": "クラゲ・イソギンチャク",
     "family": "オキクラゲ科",
     "categoryId": "kurage",
@@ -5055,11 +5062,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/mizukurage/main.jpg",
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=135306",
-    "imageSource": "https://static.inaturalist.org/photos/128613708/large.jpg",
-    "imageAttribution": "(c) Poul Erik Rasmussen, all rights reserved, uploaded by Poul Erik Rasmussen",
-    "thumb": "./assets/species/mizukurage/thumb.jpg"
+    "imageSource": "https://static.inaturalist.org/photos/4156554/large.jpg",
+    "imageAttribution": "(c) Alfonso Montiel, all rights reserved, uploaded by Alfonso Montiel",
+    "image": "./assets/species/mizukurage/main.webp",
+    "thumb": "./assets/species/mizukurage/thumb.webp"
   },
   {
     "id": "habukurage",
@@ -5089,12 +5096,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/habukurage/main.jpg",
+    "image": "./assets/species/habukurage/main.webp",
     "source": "https://www.inaturalist.org/taxa/128370-Chironex-yamaguchii",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/22346819/large.jpeg",
     "imageAttribution": "(c) Wonwoong Kim, some rights reserved (CC BY-NC), uploaded by Wonwoong Kim",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/habukurage/thumb.jpg"
+    "thumb": "./assets/species/habukurage/thumb.webp"
   },
   {
     "id": "hatago-isoginchaku",
@@ -5123,12 +5130,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/hatago-isoginchaku/main.jpg",
+    "image": "./assets/species/hatago-isoginchaku/main.webp",
     "source": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=283955",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/70531114/large.jpg",
     "imageAttribution": "(c) Nhobgood - Nick Hobgood, some rights reserved (CC BY-SA)",
     "imageLicense": "cc-by-sa",
-    "thumb": "./assets/species/hatago-isoginchaku/thumb.jpg"
+    "thumb": "./assets/species/hatago-isoginchaku/thumb.webp"
   },
   {
     "id": "umi-budou",
@@ -5158,12 +5165,12 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/umi-budou/main.jpg",
+    "image": "./assets/species/umi-budou/main.webp",
     "source": "https://www.sealifebase.se/summary/Caulerpa-lentillifera.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/102453722/large.jpg",
     "imageAttribution": "(c) Ria Tan, some rights reserved (CC BY-NC-SA)",
     "imageLicense": "cc-by-nc-sa",
-    "thumb": "./assets/species/umi-budou/thumb.jpg"
+    "thumb": "./assets/species/umi-budou/thumb.webp"
   },
   {
     "id": "ryukyu-sugamo",
@@ -5192,11 +5199,11 @@
       "behavior",
       "feature"
     ],
-    "image": "./assets/species/ryukyu-sugamo/main.jpg",
+    "image": "./assets/species/ryukyu-sugamo/main.webp",
     "source": "https://www.sealifebase.se/summary/Thalassia-hemprichii.html",
     "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/12321124/large.jpg",
     "imageAttribution": "(c) Yingyod Lapwong, some rights reserved (CC BY-NC), uploaded by Yingyod Lapwong",
     "imageLicense": "cc-by-nc",
-    "thumb": "./assets/species/ryukyu-sugamo/thumb.jpg"
+    "thumb": "./assets/species/ryukyu-sugamo/thumb.webp"
   }
 ]
