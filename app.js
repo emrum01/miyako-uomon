@@ -111,12 +111,16 @@ const playerStart = { x: 10, y: 10 };
 const battleBgmSources = {
   normal: "./assets/audio/battle-umi-no-himitsugyo.mp3",
   rare: "./assets/audio/rare-shinkai-no-sogu.mp3",
+  legendary: "./assets/audio/legendary-umi-no-nushi.mp3",
 };
 const mapBgmSources = {
   port: "./assets/audio/maps/port-taira.mp3",
   beach: "./assets/audio/maps/beach-yonaha-maehama.mp3",
   reef: "./assets/audio/maps/reef-yaebiji.mp3",
   offshore: "./assets/audio/maps/offshore-irabu-drift.mp3",
+  mangrove: "./assets/audio/maps/mangrove-shimajiri.mp3",
+  bluehole: "./assets/audio/maps/bluehole-toriike.mp3",
+  ogami: "./assets/audio/maps/ogami-sanctuary.mp3",
 };
 const sfxSources = {
   encounter: "./assets/sfx/encounter.ogg",
@@ -1305,7 +1309,7 @@ function startEncounter() {
   } else {
     setMessage(`${fish.rarity === "rare" ? "めずらしい気配！ " : ""}なにかの魚が とびだしてきた！`);
   }
-  playBattleBgm(special ? "rare" : "normal");
+  playBattleBgm(fish.rarity === "legendary" ? "legendary" : special ? "rare" : "normal");
 }
 
 function handleCommand(command) {
@@ -3240,7 +3244,7 @@ elements.soundToggle.addEventListener("click", () => {
   if (state.soundOn) {
     unlockAudio();
     if (state.currentFish) {
-      playBattleBgm((state.currentFish.rarity === "rare" || state.currentFish.rarity === "legendary") ? "rare" : "normal");
+      playBattleBgm(state.currentFish.rarity === "legendary" ? "legendary" : state.currentFish.rarity === "rare" ? "rare" : "normal");
     } else {
       playMapBgm();
     }
