@@ -323,7 +323,8 @@ function updateBattleOverlay() {
   elements.areaBadge.classList.remove("hidden");
   elements.messageBox.classList.add("battle-hidden");
   elements.enemyHpName.textContent = state.nameRevealed ? fish.name : "???";
-  elements.enemyRarity.textContent = fish.rarity.toUpperCase();
+  elements.enemyRarity.textContent = fish.rarity.charAt(0).toUpperCase();
+  elements.enemyRarity.title = fish.rarity.toUpperCase();
   elements.enemyRarity.className = `enemy-rarity ${fish.rarity === "rare" ? "rare" : ""}`;
   elements.areaBadge.textContent = areaName;
   elements.enemyHpText.textContent = `HP ${state.currentHp} / ${state.maxHp}`;

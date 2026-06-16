@@ -250,23 +250,45 @@ body.battle-flash .game-screen::after {
 .enemy-hp-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-start;
+  gap: 10px;
   margin-bottom: 8px;
   font-size: clamp(0.78rem, 1.6vw, 0.95rem);
   font-weight: 900;
 }
 
+.enemy-hp-row > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#enemyHpName {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.25;
+}
+
+#enemyHpText {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
 .enemy-rarity {
   display: inline-flex;
   align-items: center;
-  min-height: 22px;
-  margin-left: 8px;
-  padding: 2px 8px;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 7px;
+  padding: 0 2px;
   border-radius: 999px;
   color: #0f4650;
   background: #d9f3f6;
-  font-size: 0.7rem;
+  font-size: 0.74rem;
   font-weight: 950;
 }
 
@@ -511,8 +533,8 @@ body.battle-flash .game-screen::after {
 
 .answer-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: 1fr;
+  gap: 9px;
 }
 
 .answer-button {
@@ -520,9 +542,9 @@ body.battle-flash .game-screen::after {
   border-radius: 12px;
   padding: 10px 12px;
   text-align: left;
-  min-height: 44px;
-  font-size: 0.92rem;
-  line-height: 1.35;
+  min-height: 48px;
+  font-size: 1.06rem;
+  line-height: 1.4;
 }
 
 .answer-button.correct {
@@ -1413,12 +1435,12 @@ body.battle-active #menuPanel {
   }
 
   .battle-fish-image {
-    top: 24%;
+    top: 17%;
     height: 32%;
   }
 
   .enemy-hp-panel {
-    width: min(330px, 56%);
+    width: min(360px, 70%);
     padding: 8px 10px;
   }
 
@@ -1551,7 +1573,7 @@ body.battle-active #menuPanel {
   .quiz-panel {
     bottom: 3%;
     z-index: 5;
-    max-height: 44%;
+    max-height: 58%;
     padding: 9px;
   }
 
@@ -1569,11 +1591,11 @@ body.battle-active #menuPanel {
   }
 
   .answer-button {
-    min-height: 0;
-    padding: 8px 9px;
+    min-height: 46px;
+    padding: 10px 13px;
     border-radius: 10px;
-    font-size: clamp(0.74rem, 3.35vw, 0.9rem);
-    line-height: 1.25;
+    font-size: clamp(0.98rem, 4vw, 1.08rem);
+    line-height: 1.35;
   }
 
   .result-text {
