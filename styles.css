@@ -119,16 +119,67 @@ h2 {
   color: #a34335;
 }
 
-.menu-action-button {
-  min-height: 34px;
-  padding: 5px 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
+/* 魚図鑑への動線。ステータス用ピルと区別し、押せるリンクだと一目で分かる見た目にする */
+.dex-link-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 13px 14px;
+  border: 0;
+  border-radius: 14px;
   color: #fff;
-  background: var(--deep);
+  background: linear-gradient(135deg, var(--sea), var(--kelp));
+  box-shadow: 0 12px 24px rgba(11, 143, 163, 0.3);
   cursor: pointer;
-  font-size: 0.88rem;
+  text-align: left;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.dex-link-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(11, 143, 163, 0.36);
+}
+
+.dex-link-button:active {
+  transform: translateY(0);
+}
+
+.dex-link-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 1.3rem;
+}
+
+.dex-link-text {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 0;
+}
+
+.dex-link-text strong {
+  font-size: 1rem;
   font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+.dex-link-text small {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dex-link-arrow {
+  font-size: 1.7rem;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .game-layout {
