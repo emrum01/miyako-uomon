@@ -3869,9 +3869,9 @@
   },
   {
     "id": "sarcophyton-trocheliophorum",
-    "nameJa": "ヒダベリウミキノコ",
-    "localName": "ヒダベリウミキノコ",
-    "scientificName": "Sarcophyton trocheliophorum",
+    "nameJa": "オオウミキノコ",
+    "localName": "オオウミキノコ",
+    "scientificName": "Sarcophyton glaucum",
     "kingdomGroup": "サンゴ",
     "family": "ナギサトサカ科",
     "categoryId": "coral",
@@ -3894,8 +3894,12 @@
       "behavior",
       "feature"
     ],
-    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophyton_trocheliophorum.jpg",
-    "source": "https://www.sealifebase.ca/summary/Sarcophyton-trocheliophorum.html"
+    "source": "https://www.sealifebase.ca/summary/Sarcophyton-trocheliophorum.html",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/311092167/large.jpg",
+    "imageAttribution": "(c) Diego Delso\n, some rights reserved (CC BY-SA)",
+    "imageLicense": "cc-by-sa",
+    "image": "./assets/species/sarcophyton-trocheliophorum/main.webp",
+    "thumb": "./assets/species/sarcophyton-trocheliophorum/thumb.webp"
   },
   {
     "id": "lobophyllia-hemprichii",
@@ -3933,7 +3937,7 @@
   },
   {
     "id": "sinularia-flexibilis",
-    "nameJa": "トサカサンゴ",
+    "nameJa": "ヤナギカタトサカ",
     "localName": "トサカ",
     "scientificName": "Sinularia flexibilis",
     "kingdomGroup": "サンゴ",
@@ -4102,9 +4106,9 @@
   },
   {
     "id": "kumadori-umiushi",
-    "nameJa": "クマドリウミウシ",
-    "localName": "クマドリウミウシ",
-    "scientificName": "Hypselodoris obscura",
+    "nameJa": "シライトウミウシ",
+    "localName": "シライトウミウシ",
+    "scientificName": "Chromodoris magnifica",
     "kingdomGroup": "ウミウシ",
     "family": "イロウミウシ科",
     "categoryId": "umiushi",
@@ -4128,9 +4132,9 @@
       "feature"
     ],
     "source": "https://www.inaturalist.org/taxa/493316-Hypselodoris-obscura",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/5622395/large.jpg",
-    "imageAttribution": "(c) Richard Ling, some rights reserved (CC BY-NC-ND)",
-    "imageLicense": "cc-by-nc-nd",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/131338167/large.jpg",
+    "imageAttribution": "(c) Jean-Paul Cassez, some rights reserved (CC BY-NC), uploaded by Jean-Paul Cassez",
+    "imageLicense": "cc-by-nc",
     "image": "./assets/species/kumadori-umiushi/main.webp",
     "thumb": "./assets/species/kumadori-umiushi/thumb.webp"
   },
@@ -4170,9 +4174,9 @@
   },
   {
     "id": "santa-umiushi",
-    "nameJa": "サンタウミウシ",
-    "localName": "サンタウミウシ",
-    "scientificName": "Ceratosoma trilobatum",
+    "nameJa": "サラサウミウシ",
+    "localName": "サラサウミウシ",
+    "scientificName": "Goniobranchus tinctorius",
     "kingdomGroup": "ウミウシ",
     "family": "ドーリス科",
     "categoryId": "umiushi",
@@ -4196,9 +4200,8 @@
       "feature"
     ],
     "source": "https://www.inaturalist.org/taxa/130803-Ceratosoma-trilobatum",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/32160831/large.jpg",
-    "imageAttribution": "(c) Erwin Koehler, some rights reserved (CC BY-NC), uploaded by Erwin Koehler",
-    "imageLicense": "cc-by-nc",
+    "imageSource": "https://static.inaturalist.org/photos/313386821/large.jpg",
+    "imageAttribution": "(c) Brian Mayes, all rights reserved, uploaded by Brian Mayes",
     "image": "./assets/species/santa-umiushi/main.webp",
     "thumb": "./assets/species/santa-umiushi/thumb.webp"
   },
@@ -4310,9 +4313,9 @@
   },
   {
     "id": "imogai-oji",
-    "nameJa": "オウサマイモ",
+    "nameJa": "アンボイナガイ",
     "localName": "イモガイ",
-    "scientificName": "Conus litteratus",
+    "scientificName": "Conus geographus",
     "kingdomGroup": "貝・巻貝",
     "family": "イモガイ科",
     "categoryId": "kai",
@@ -4337,9 +4340,9 @@
       "feature"
     ],
     "source": "https://www.sealifebase.ca/summary/Conus-geographus.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/123172496/large.jpg",
-    "imageAttribution": "(c) Takaaki Hattori, some rights reserved (CC BY), uploaded by Takaaki Hattori",
-    "imageLicense": "cc-by",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/478025983/large.jpeg",
+    "imageAttribution": "(c) Febrianne S, some rights reserved (CC BY-NC), uploaded by Febrianne S",
+    "imageLicense": "cc-by-nc",
     "image": "./assets/species/imogai-oji/main.webp",
     "thumb": "./assets/species/imogai-oji/thumb.webp"
   },
@@ -4449,9 +4452,9 @@
   },
   {
     "id": "mitsukuri-imogai",
-    "nameJa": "アンボンクロザメ",
+    "nameJa": "タガヤサンミナシ",
     "localName": "イモガイ",
-    "scientificName": "Conus litteratus",
+    "scientificName": "Conus textile",
     "kingdomGroup": "貝・巻貝",
     "family": "イモガイ科",
     "categoryId": "kai",
@@ -4476,9 +4479,9 @@
       "feature"
     ],
     "source": "https://www.sealifebase.ca/summary/Conus-textile.html",
-    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/123172496/large.jpg",
-    "imageAttribution": "(c) Takaaki Hattori, some rights reserved (CC BY), uploaded by Takaaki Hattori",
-    "imageLicense": "cc-by",
+    "imageSource": "https://inaturalist-open-data.s3.amazonaws.com/photos/230939052/large.jpg",
+    "imageAttribution": "(c) uwkwaj, some rights reserved (CC BY-NC), uploaded by uwkwaj",
+    "imageLicense": "cc-by-nc",
     "image": "./assets/species/mitsukuri-imogai/main.webp",
     "thumb": "./assets/species/mitsukuri-imogai/thumb.webp"
   },
