@@ -562,6 +562,12 @@ body.battle-flash .game-screen::after {
   font-weight: 950;
 }
 
+/* バトル中は選択肢UIと重なるため、メニュー（設定）ボタンとパネルを隠す */
+body.battle-active .floating-menu-button,
+body.battle-active #menuPanel {
+  display: none;
+}
+
 .panel {
   border-radius: 16px;
   padding: 16px;
