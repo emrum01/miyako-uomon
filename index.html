@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ミヤコフィッシュクエスト</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-layout">
+        <section class="game-panel" aria-label="ゲーム画面">
+          <div class="game-screen">
+            <canvas id="gameCanvas" width="640" height="960"></canvas>
+            <img id="battleFishImage" class="battle-fish-image hidden" alt="" />
+            <div id="enemyHpPanel" class="enemy-hp-panel hidden">
+              <div class="enemy-hp-row">
+                <span><span id="enemyHpName">???</span><span id="enemyRarity" class="enemy-rarity">COMMON</span></span>
+                <span id="enemyHpText">HP 0 / 0</span>
+              </div>
+              <div class="hp-track"><div id="enemyHpFill" class="hp-fill"></div></div>
+            </div>
+            <div id="areaBadge" class="area-badge hidden">平良港</div>
+            <div id="bonusToast" class="bonus-toast hidden">+0 うみコイン</div>
+
+            <div id="commandPanel" class="command-panel hidden" aria-label="アクション">
+              <button class="command-button" type="button" data-command="fight">たたかう</button>
+              <button class="command-button" type="button" data-command="observe">ようすをみる</button>
+              <button class="command-button" type="button" data-command="run">にげる</button>
+            </div>
+
+            <div id="quizPanel" class="quiz-panel hidden" aria-label="習性クイズ">
+              <h2 id="questionText"></h2>
+              <div id="answerList" class="answer-list"></div>
+              <p id="resultText" class="result-text"></p>
+            </div>
+          </div>
+
+          <div id="messageBox" class="message-box">矢印キー / WASD / 十字ボタンで宮古島の海辺を探索しよう。</div>
+
+          <div class="touch-pad" aria-label="移動">
+            <button type="button" data-move="up" aria-label="上">▲</button>
+            <button type="button" data-move="left" aria-label="左">◀</button>
+            <button type="button" data-move="down" aria-label="下">▼</button>
+            <button type="button" data-move="right" aria-label="右">▶</button>
+          </div>
+        </section>
+
+        <aside id="menuPanel" class="side-stack hidden">
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>メニュー</h2>
+              <p>進行状況と設定</p>
+            </div>
+            <div class="stats">
+              <span id="caughtCount">0 / 0</span>
+              <span id="bonusCount" class="bonus-count">うみコイン 0</span>
+              <button id="dexOpenButton" class="menu-action-button" type="button">魚図鑑</button>
+              <button id="soundToggle" class="icon-button active" type="button" aria-label="BGM切り替え" title="BGM切り替え">♪</button>
+              <button id="resetButton" class="icon-button danger" type="button" aria-label="進行リセット" title="進行リセット">↺</button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <h2>現在地</h2>
+              <p id="areaStatus">平良港</p>
+            </div>
+            <div id="areaList" class="area-list"></div>
+          </section>
+        </aside>
+
+        <section id="dexScreen" class="dex-screen hidden" aria-label="魚図鑑画面">
+          <div class="dex-screen-header">
+            <div>
+              <p class="eyebrow">Miyako Fish Dex</p>
+              <h2>魚図鑑</h2>
+              <p>一覧から魚を選んで、習性と覚えどころを読む。</p>
+            </div>
+            <button id="dexCloseButton" class="icon-button" type="button" aria-label="図鑑を閉じる" title="閉じる">×</button>
+          </div>
+
+          <div class="dex-tools">
+            <div class="dex-search-wrap">
+              <input id="dexSearchInput" class="dex-search" type="search" placeholder="名前・習性・学名で検索" />
+              <button id="dexSearchClear" class="dex-clear-button" type="button">クリア</button>
+            </div>
+            <div id="dexFilterList" class="dex-filter-list" aria-label="魚の種類でフィルタ">
+              <button class="dex-filter-button selected" type="button" data-rarity="all">すべて</button>
+              <button class="dex-filter-button" type="button" data-rarity="common">COMMON</button>
+              <button class="dex-filter-button" type="button" data-rarity="uncommon">UNCOMMON</button>
+              <button class="dex-filter-button" type="button" data-rarity="rare">RARE</button>
+            </div>
+            <div id="dexCategoryList" class="dex-filter-list dex-category-list" aria-label="分類でフィルタ"></div>
+          </div>
+
+          <div class="dex-browser">
+            <div id="dexList" class="dex-list" aria-label="魚一覧"></div>
+          </div>
+
+          <div id="dexDetailScrim" class="dex-detail-scrim hidden" aria-hidden="true"></div>
+          <article id="dexDetailPanel" class="dex-detail-panel hidden" aria-label="魚の詳細"></article>
+        </section>
+
+        <button id="menuToggle" class="floating-menu-button" type="button" aria-label="メニューを開く">☰</button>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
