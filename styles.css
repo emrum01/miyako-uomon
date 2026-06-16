@@ -10,6 +10,7 @@
   --kelp: #17765c;
   --sand: #e8c56e;
   --rare: #8752ff;
+  --legendary: linear-gradient(135deg, #ffb300 0%, #ff5fa2 45%, #7c4dff 100%);
   --shadow: 0 18px 60px rgba(23, 32, 42, 0.14);
 }
 
@@ -295,6 +296,12 @@ body.battle-flash .game-screen::after {
 .enemy-rarity.rare {
   color: #fff;
   background: var(--rare);
+}
+
+.enemy-rarity.legendary {
+  color: #fff;
+  background: var(--legendary);
+  box-shadow: 0 0 6px rgba(255, 196, 0, 0.7);
 }
 
 .area-badge {
@@ -1271,6 +1278,17 @@ body.battle-active #menuPanel {
   background: #d9f3f6;
   font-size: 0.78rem;
   font-weight: 900;
+}
+
+.dex-pill-rarity.rarity-rare {
+  color: #fff;
+  background: var(--rare);
+}
+
+.dex-pill-rarity.rarity-legendary {
+  color: #fff;
+  background: var(--legendary);
+  box-shadow: 0 0 8px rgba(255, 196, 0, 0.6);
 }
 
 .dex-feature {

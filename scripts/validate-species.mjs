@@ -10,8 +10,8 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const file = join(root, "data", "species.json");
 
-const AREAS = new Set(["port", "beach", "reef", "offshore"]);
-const RARITY = new Set(["common", "uncommon", "rare"]);
+const AREAS = new Set(["port", "beach", "reef", "offshore", "mangrove", "bluehole", "ogami"]);
+const RARITY = new Set(["common", "uncommon", "rare", "legendary"]);
 const QUIZ_KEYS = new Set(["name", "category", "habitat", "diet", "behavior", "feature"]);
 const REQUIRED_STR = [
   "id", "nameJa", "localName", "scientificName", "kingdomGroup", "family",

@@ -108,6 +108,50 @@ Short bonus reward jingle for gaining ocean coins in a browser fish RPG. Sparkly
 
 ---
 
+## 新マップ探索
+
+### 島尻マングローブ
+
+<!-- 汽水域の静かな干潟・マングローブ林。穏やか・有機的・水のせせらぎ・鳥の声・癒し系のループ探索曲。三線の柔らかいつま弾きと環境音的なパッドで宮古島の自然を表現。 -->
+<!-- 推奨ファイル名: maps/mangrove-shimajiri.mp3 -->
+
+```text
+Mangrove estuary exploration BGM for a Miyako Island fish-learning browser RPG. Quiet tidal flat, shallow brackish water, birdsong atmosphere, organic and soothing. Soft sanshin-like plucked strings, gentle marimba, airy breathy pads, slow rippling arpeggios, subtle wooden percussion. Calm and healing, perfect for slow peaceful exploration. Seamless loop, 76 BPM, 60 seconds, instrumental only, no vocals, no sound effects, original composition.
+```
+
+### 通り池 / ブルーホール
+
+<!-- 下地島の深い海中洞窟・神秘的なトワイライトゾーン。深く沈んでいくような感覚、荘厳で少し不安を帯びた雰囲気。洞窟の反響やディープな空間感を意識。 -->
+<!-- 推奨ファイル名: maps/bluehole-toriike.mp3 -->
+
+```text
+Underwater cave exploration BGM for a Miyako Island browser RPG, inspired by the deep blue hole at Shimoji Island. Dark, mysterious, twilight-zone atmosphere, sense of slowly sinking into an abyss. Deep resonant synth pads, sparse distant plucked notes, slow low marimba pulses, subtle cave-like reverb textures, muted deep bass drone. Awe-inspiring but slightly unsettling. Seamless loop, 70 BPM, 60 seconds, instrumental only, no vocals, no sound effects, original composition.
+```
+
+### 大神島
+
+<!-- 神々の島・聖域・御嶽。古代的な畏敬と厳かな神聖さ。宮古島の民間信仰に通じる荘厳さを三線と太鼓的なパーカッションで表現。 -->
+<!-- 推奨ファイル名: maps/ogami-sanctuary.mp3 -->
+
+```text
+Sacred island exploration BGM for a Miyako Island fish-learning RPG, evoking Ogami Island as a divine sanctuary and utaki spiritual site. Ancient, solemn, reverent, awe-inspiring. Slow ceremonial taiko-like drum pulse, deep resonant pads, sparse sanshin-like plucks with wide reverb, distant choral-texture synth, minimal and deliberate. Feels like stepping into a holy place. Seamless loop, 66 BPM, 60 seconds, instrumental only, no vocals, no sound effects, original composition.
+```
+
+---
+
+## 伝説遭遇バトル
+
+### 海の主（伝説バトル）
+
+<!-- 「海の主」との遭遇。rare-shinkai-no-soguを超える特別感。壮大・緊張・畏敬・運命的。バトルループとして機能しつつ、ただの強敵ではなく海の守護者と対峙する神聖さも持つ。 -->
+<!-- 推奨ファイル名: legendary-umi-no-nushi.mp3 -->
+
+```text
+Legendary sea guardian encounter BGM for a Miyako Island fish quiz RPG. The player faces the ancient lord of the ocean, a being of myth and awe beyond any rare fish. Epic, tense, reverent, fateful. Powerful taiko drums, bold cinematic marimba, deep orchestral bass pulses, shimmering Okinawan-inspired sanshin lead melody, surging string-like synth pads, building intensity. More majestic and sacred than any standard battle theme. Seamless loop, 132 BPM, 75 seconds, instrumental only, no vocals, no sound effects, original composition.
+```
+
+---
+
 ## 生成時のネガティブ指定
 
 ```text
