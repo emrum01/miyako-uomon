@@ -14,9 +14,28 @@
 6. 正解するたびに魚のHPが減る
 7. HPを0にすると捕獲でき、うみコインを獲得する
 
+## 生物データ（151種スケール対応）
+
+生物データは `app.js` への直書きをやめ、外部JSON `data/species.json` に分離しています。
+起動時に `fetch("./data/species.json")` で読み込み、正規化してから図鑑・遭遇・クイズを開始します。
+
+- スキーマ: `id` / `nameJa` / `localName` / `scientificName` / `kingdomGroup`（大分類）/ `family` / `categoryId` / `categoryName` / `categoryNote` / `rarity` / `areas` / `habitat` / `diet` / `behavior` / `feature` / `danger` / `quizFacts` / `image` / `source`
+- 大分類 `kingdomGroup`: 魚類・ウミガメ・サンゴ・ウミウシ・貝/巻貝・甲殻類・棘皮動物・クラゲ/イソギンチャク・海藻
+- 図鑑は 大分類 / エリア / 分類 / レア度 / 全文検索 で絞り込み、一覧は最大160件表示
+- クイズは `quizFacts` で出題対象を制御（サンゴ・海藻など食性が不自然な種は `diet` を空にし出題から除外）
+
+### データ・画像のスクリプト
+
+- `scripts/validate-species.mjs` — `data/species.json` のスキーマ/重複/件数検証（`node scripts/validate-species.mjs`）
+- `scripts/fetch-species-images.mjs` — `image` URLから原画像を `assets/species/<id>/source.*` に取得
+- `scripts/optimize-images.mjs` — 原画像を `main.webp`(横900px) / `thumb.webp`(横240px) に変換（macOS `sips`）
+
+画像は `assets/species/<id>/main.webp`・`thumb.webp` をローカル保存する方針。未取得の種は
+`image` を省略すると、表示時に `assets/species/placeholder.svg` へ自動フォールバックします。
+
 ## MVPの範囲
 
-- 魚6種類
+- 生物151種（`data/species.json`）
 - エリア4種類
 - Canvasのドット絵探索マップ
 - エリア別の1画面マップと端移動
@@ -42,7 +61,10 @@
 
 ## 画像素材について
 
-魚画像はWeb上の画像URLを参照しています。個人利用向けのMVPです。
+各種の画像は `data/species.json` の `image` を参照します。ローカルの `assets/species/<id>/`
+に WebP を保存して参照するのが推奨ですが、URL参照でも動作します。読み込めない画像は
+`assets/species/placeholder.svg` に自動フォールバックするため、画像切れは表示されません。
+個人利用・教育用途向けのMVPです。元画像の出典は各種の `source` に保持しています。
 
 ## 静的公開
 

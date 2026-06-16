@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="画像準備中">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfeff7"/>
+      <stop offset="1" stop-color="#5aaec0"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#g)"/>
+  <g fill="#1b7f93" opacity="0.85">
+    <path d="M62 120c20-30 64-40 96-22 8 5 16 12 22 22-6 10-14 17-22 22-32 18-76 8-96-22z"/>
+    <path d="M180 120l28-20v40z"/>
+    <circle cx="92" cy="112" r="6" fill="#ffffff"/>
+  </g>
+  <text x="120" y="200" font-family="system-ui, sans-serif" font-size="20" font-weight="700"
+        text-anchor="middle" fill="#0d4a57">画像準備中</text>
+</svg>

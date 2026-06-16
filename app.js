@@ -1,131 +1,58 @@
-const fishData = [
-  {
-    id: "gurukun",
-    name: "グルクン",
-    localName: "タカサゴ",
-    scientific: "Pterocaesio digramma",
-    categoryId: "takasago",
-    categoryName: "タカサゴ科",
-    categoryNote: "細長い体で群れを作る、サンゴ礁まわりの中層遊泳タイプ。",
-    rarity: "common",
-    areas: ["port", "reef"],
-    habitat: "サンゴ礁のまわりで群れを作り、中層を泳ぐ。",
-    diet: "動物プランクトンを食べる。",
-    behavior: "群れで素早く泳ぎ、外敵から身を守る。",
-    feature: "沖縄県魚。水中では銀色の群れが一枚のカーテンみたいに向きを変え、食卓では唐揚げで一気に主役になる。",
-    danger: "低い",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Pterocaesio%20digramma%20GBR.jpg",
-    source: "https://www.fishbase.se/summary/speciessummary.php?id=933",
-  },
-  {
-    id: "irabucha",
-    name: "イラブチャー",
-    localName: "ブダイ類",
-    scientific: "Chlorurus sordidus",
-    categoryId: "budai",
-    categoryName: "ブダイ科",
-    categoryNote: "くちばし状の歯で藻類や岩肌をかじる、サンゴ礁の草食・雑食タイプ。",
-    rarity: "common",
-    areas: ["beach", "reef"],
-    habitat: "浅いサンゴ礁や礁池に多い。",
-    diet: "サンゴ岩の表面の藻類をかじり取る。",
-    behavior: "くちばし状の歯で岩を削り、砂づくりにも関わる。",
-    feature: "くちばしで岩をガリガリ削るサンゴ礁の庭師。かじった岩やサンゴ片が、白い砂浜の材料になることがある。",
-    danger: "低い",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Chlorurus%20sordidus%20by%20Jaroslaw%20Barski.jpg",
-    source: "https://commons.wikimedia.org/wiki/File:Chlorurus_sordidus_by_Jaroslaw_Barski.jpg",
-  },
-  {
-    id: "akajin",
-    name: "アカジンミーバイ",
-    localName: "スジアラ",
-    scientific: "Variola louti",
-    categoryId: "hata",
-    categoryName: "ハタ科",
-    categoryNote: "岩陰や根につく肉食魚。待ち伏せして獲物を狙うタイプ。",
-    rarity: "rare",
-    areas: ["reef", "offshore"],
-    habitat: "透明度の高い外洋寄りのサンゴ礁にいる。",
-    diet: "小魚、カニ、エビなどを食べる。",
-    behavior: "岩陰や根の近くで待ち伏せし、獲物を狙う。",
-    feature: "派手な赤色なのに、狩りは忍者型。根のそばでじっと待ち、近づいた獲物に一気に飛び出す。",
-    danger: "地域によりシガテラ毒の注意",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Serranidae%20Variola%20louti%201.jpg",
-    source: "https://fishbase.se/summary/Variola-louti",
-  },
-  {
-    id: "taman",
-    name: "タマン",
-    localName: "ハマフエフキ",
-    scientific: "Lethrinus nebulosus",
-    categoryId: "fuefuki",
-    categoryName: "フエフキダイ科",
-    categoryNote: "砂地や礁縁を動き、底のカニ・貝・小魚を探す底物タイプ。",
-    rarity: "uncommon",
-    areas: ["beach", "offshore"],
-    habitat: "砂地、海草場、サンゴ礁の縁を行き来する。",
-    diet: "カニ、貝、小魚など底の生き物を食べる。",
-    behavior: "夜に活発になり、底付近を探りながら餌を探す。",
-    feature: "昼は控えめ、夜は砂地のパトロール隊。暗くなると底を探りながら、硬いカニや貝まで食べる。",
-    danger: "低い",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Lethrinus%20nebulosus%20287497294%20%28cropped%29.jpg",
-    source: "https://commons.wikimedia.org/wiki/File:Lethrinus_nebulosus_287497294_(cropped).jpg",
-  },
-  {
-    id: "kumanomi",
-    name: "クマノミ",
-    localName: "クマノミ類",
-    scientific: "Amphiprion clarkii",
-    categoryId: "suzumedai",
-    categoryName: "スズメダイ科",
-    categoryNote: "小型でなわばり性が強い仲間。クマノミ類はイソギンチャクと深く関わる。",
-    rarity: "uncommon",
-    areas: ["beach", "reef"],
-    habitat: "イソギンチャクの近くや浅いサンゴ礁にいる。",
-    diet: "小さな動物や藻類などを食べる雑食性。",
-    behavior: "イソギンチャクと共生し、卵は雄が世話をする。",
-    feature: "毒のあるイソギンチャクを家にする魚。卵の世話は雄が担当し、ヒレで新鮮な水を送る。",
-    danger: "低い",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Amphiprion%20clarkii%20sipadan.jpg",
-    source: "https://fishbase.se/summary/Amphiprion-clarkii",
-  },
-  {
-    id: "harisenbon",
-    name: "ハリセンボン",
-    localName: "アバサー",
-    scientific: "Diodon holocanthus",
-    categoryId: "harisenbon",
-    categoryName: "ハリセンボン科",
-    categoryNote: "硬いくちばしとふくらむ体で身を守る、夜行性寄りの底生動物ハンター。",
-    rarity: "rare",
-    areas: ["reef", "offshore"],
-    habitat: "浅い礁や岩場、砂地にも現れる。",
-    diet: "夜に貝、ウニ、ヤドカリ、カニなどを食べる。",
-    behavior: "泳ぎは得意ではなく、危険を感じると体をふくらませる。",
-    feature: "ふだんはのんびり、ピンチになると風船みたいに変身。針を立てて、食べにくい相手になる。",
-    danger: "取り扱い注意",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Diodon%20holocanthus%20in%20kona%202.jpg",
-    source: "https://fishbase.org/summary/4659",
-  },
-  {
-    id: "kurosora",
-    name: "クロソラスズメダイ",
-    localName: "ファーマーフィッシュ",
-    scientific: "Stegastes nigricans",
-    categoryId: "suzumedai",
-    categoryName: "スズメダイ科",
-    categoryNote: "小型でなわばり性が強い仲間。クロソラスズメダイは藻の畑を守る。",
-    rarity: "uncommon",
-    areas: ["beach", "reef"],
-    habitat: "浅いサンゴ礁の礁原や礁池で、なわばりを持って暮らす。",
-    diet: "自分のなわばりで育てた糸状の藻類などを食べる。",
-    behavior: "不要な藻を抜き、藻を食べに来る魚やウニを追い払って、自分の藻の畑を守る。",
-    feature: "海の中で農業をする魚。好きな藻を残し、邪魔な藻を取り除き、畑に近づく相手には小さな体で突撃する。",
-    danger: "なわばりに近づくと噛みつくことがある",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Stegastes%20nigricans%201.jpg",
-    source: "https://www.fishbase.se/summary/stegastes-nigricans",
-  },
+// 生物データは data/species.json から読み込む（起動時に loadSpecies() が実行）。
+let fishData = [];
+
+const SPECIES_URL = "./data/species.json";
+const PLACEHOLDER_IMAGE = "./assets/species/placeholder.svg";
+
+// 大分類（kingdomGroup）の表示順。species.json 内の値はこの順で並べる。
+const kingdomGroups = [
+  "魚類",
+  "ウミガメ",
+  "サンゴ",
+  "ウミウシ",
+  "貝・巻貝",
+  "甲殻類",
+  "棘皮動物",
+  "クラゲ・イソギンチャク",
+  "海藻",
 ];
+
+// JSON の1レコードを、ゲーム内部で使う形へ正規化する。
+// 既存コードが name / scientific を参照しているため別名を付与する。
+function normalizeSpecies(raw) {
+  const name = raw.nameJa ?? raw.name ?? raw.id;
+  const scientific = raw.scientificName ?? raw.scientific ?? "";
+  const image = raw.image || PLACEHOLDER_IMAGE;
+  const thumb = raw.thumb || image;
+  // quizFacts 未指定時は、中身のある説明フィールドから自動で決める。
+  let quizFacts = Array.isArray(raw.quizFacts) ? raw.quizFacts.slice() : null;
+  if (!quizFacts) {
+    quizFacts = ["name", "category", "habitat", "behavior", "feature"];
+    if (raw.diet && raw.diet.trim()) quizFacts.splice(3, 0, "diet");
+  }
+  return {
+    id: raw.id,
+    name,
+    localName: raw.localName || name,
+    scientific,
+    kingdomGroup: raw.kingdomGroup || "魚類",
+    family: raw.family || raw.categoryName || "",
+    categoryId: raw.categoryId,
+    categoryName: raw.categoryName,
+    categoryNote: raw.categoryNote || "",
+    rarity: raw.rarity || "common",
+    areas: Array.isArray(raw.areas) ? raw.areas : [],
+    habitat: raw.habitat || "",
+    diet: raw.diet || "",
+    behavior: raw.behavior || "",
+    feature: raw.feature || "",
+    danger: raw.danger || "低い",
+    quizFacts,
+    image,
+    thumb,
+    source: raw.source || raw.imageSource || "",
+  };
+}
 
 const areas = [
   { id: "port", name: "平良港", description: "桟橋の近く。群れの魚が多い", color: "#5aaec0" },
@@ -139,6 +66,11 @@ const quizTypes = [
     key: "name",
     label: "名前",
     question: () => "この魚の名前は？",
+  },
+  {
+    key: "category",
+    label: "分類",
+    question: (fish) => `${fish.name}はどのグループ（分類）の生きもの？`,
   },
   {
     key: "habitat",
@@ -219,6 +151,8 @@ const elements = {
   dexSearchInput: document.querySelector("#dexSearchInput"),
   dexSearchClear: document.querySelector("#dexSearchClear"),
   dexFilterList: document.querySelector("#dexFilterList"),
+  dexKingdomList: document.querySelector("#dexKingdomList"),
+  dexAreaList: document.querySelector("#dexAreaList"),
   dexCategoryList: document.querySelector("#dexCategoryList"),
   dexList: document.querySelector("#dexList"),
   dexDetailScrim: document.querySelector("#dexDetailScrim"),
@@ -271,16 +205,11 @@ const state = {
   dexQuery: "",
   dexRarity: "all",
   dexCategory: "all",
-  selectedDexFishId: fishData[0].id,
+  dexKingdom: "all",
+  dexArea: "all",
+  selectedDexFishId: null,
   dexDetailOpen: false,
 };
-
-const fishImages = new Map();
-for (const fish of fishData) {
-  const img = new Image();
-  img.src = fish.image;
-  fishImages.set(fish.id, img);
-}
 
 function ensureFishSave(fishId) {
   if (!state.save[fishId]) {
@@ -422,23 +351,53 @@ function pickWeightedFish(areaId) {
   return weighted[Math.floor(Math.random() * weighted.length)];
 }
 
+// クイズの選択肢に使う値。category は categoryName を答えにする。
+function quizValue(fish, key) {
+  if (key === "category") return fish.categoryName;
+  return fish[key];
+}
+
 function buildQuiz(fish, options = {}) {
-  const availableQuizTypes = quizTypes.filter((quiz) => {
+  const allowed = Array.isArray(fish.quizFacts) && fish.quizFacts.length
+    ? fish.quizFacts
+    : ["name", "category", "habitat", "behavior", "feature"];
+  let availableQuizTypes = quizTypes.filter((quiz) => {
+    if (!allowed.includes(quiz.key)) return false;
+    // 中身が空の説明は出題しない（サンゴ・海藻などの diet 空対策）。
+    if (!quizValue(fish, quiz.key)) return false;
     if (options.forceName) return quiz.key === "name";
     if (options.skipName) return quiz.key !== "name";
     return true;
   });
+  // 名前以外の出題候補が無い場合は名前にフォールバック。
+  if (!availableQuizTypes.length) {
+    availableQuizTypes = quizTypes.filter((quiz) => quiz.key === "name");
+  }
   const quiz = availableQuizTypes[Math.floor(Math.random() * availableQuizTypes.length)];
-  const wrongAnswers = shuffle(
-    fishData
-      .filter((item) => item.id !== fish.id)
-      .map((item) => item[quiz.key])
-  ).slice(0, 3);
+  const answer = quizValue(fish, quiz.key);
+
+  // まずは同じ大分類から紛らわしい誤答を集め、足りなければ全体から補う。
+  const sameGroup = fishData.filter(
+    (item) => item.id !== fish.id && item.kingdomGroup === fish.kingdomGroup
+  );
+  const others = fishData.filter(
+    (item) => item.id !== fish.id && item.kingdomGroup !== fish.kingdomGroup
+  );
+  const pool = [...shuffle(sameGroup), ...shuffle(others)];
+  const wrongAnswers = [];
+  const used = new Set([answer]);
+  for (const item of pool) {
+    const value = quizValue(item, quiz.key);
+    if (!value || used.has(value)) continue;
+    used.add(value);
+    wrongAnswers.push(value);
+    if (wrongAnswers.length === 3) break;
+  }
 
   return {
     type: quiz,
-    answer: fish[quiz.key],
-    choices: shuffle([fish[quiz.key], ...wrongAnswers]),
+    answer,
+    choices: shuffle([answer, ...wrongAnswers]),
   };
 }
 
@@ -480,7 +439,7 @@ function renderDex() {
   elements.caughtCount.textContent = `${caught} / ${fishData.length}`;
   const filteredFish = getFilteredFish();
   if (!filteredFish.some((fish) => fish.id === state.selectedDexFishId)) {
-    state.selectedDexFishId = filteredFish[0]?.id || fishData[0].id;
+    state.selectedDexFishId = filteredFish[0]?.id || fishData[0]?.id || null;
   }
   const visibleFish = filteredFish.slice(0, 160);
 
@@ -498,7 +457,7 @@ function renderDex() {
 
       return `
         <button class="dex-card selectable ${locked ? "locked" : ""} ${selected}" type="button" data-fish-id="${fish.id}">
-          <img src="${fish.image}" alt="${fish.name}" loading="lazy" />
+          <img src="${fish.thumb}" alt="${fish.name}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'" />
           <div>
             <h3>${title}</h3>
             <p>${detail}</p>
@@ -516,16 +475,18 @@ function renderDex() {
 function getFilteredFish() {
   const query = state.dexQuery.trim().toLowerCase();
   return fishData.filter((fish) => {
-    const rarityMatch = state.dexRarity === "all" || fish.rarity === state.dexRarity;
-    if (!rarityMatch) return false;
-    const categoryMatch = state.dexCategory === "all" || fish.categoryId === state.dexCategory;
-    if (!categoryMatch) return false;
+    if (state.dexKingdom !== "all" && fish.kingdomGroup !== state.dexKingdom) return false;
+    if (state.dexRarity !== "all" && fish.rarity !== state.dexRarity) return false;
+    if (state.dexCategory !== "all" && fish.categoryId !== state.dexCategory) return false;
+    if (state.dexArea !== "all" && !fish.areas.includes(state.dexArea)) return false;
     if (!query) return true;
     const text = [
       fish.name,
       fish.localName,
       fish.scientific,
       fish.rarity,
+      fish.kingdomGroup,
+      fish.family,
       fish.categoryName,
       fish.categoryNote,
       fish.habitat,
@@ -542,11 +503,18 @@ function getFilteredFish() {
 function getFishCategories() {
   const categories = new Map();
   fishData.forEach((fish) => {
+    // 大分類フィルタが効いているときは、その分類だけ並べる。
+    if (state.dexKingdom !== "all" && fish.kingdomGroup !== state.dexKingdom) return;
     if (!categories.has(fish.categoryId)) {
       categories.set(fish.categoryId, fish.categoryName);
     }
   });
   return [...categories.entries()].map(([id, name]) => ({ id, name }));
+}
+
+function getKingdomGroups() {
+  const present = new Set(fishData.map((fish) => fish.kingdomGroup));
+  return kingdomGroups.filter((group) => present.has(group));
 }
 
 function fishAreasText(fish) {
@@ -557,11 +525,12 @@ function fishAreasText(fish) {
 }
 
 function fishHabitNote(fish) {
-  return `${fish.name}は${fish.categoryName}の魚。${fish.categoryNote}${fish.habitat}${fish.diet}${fish.behavior} ${fish.feature} 危険度や扱いの目安は「${fish.danger}」。`;
+  return `${fish.name}は${fish.categoryName}の仲間。${fish.categoryNote}${fish.habitat}${fish.diet}${fish.behavior} ${fish.feature} 危険度や扱いの目安は「${fish.danger}」。`;
 }
 
 function renderDexDetail() {
   const fish = fishData.find((item) => item.id === state.selectedDexFishId) || fishData[0];
+  if (!fish) return;
   const record = state.save[fish.id] || { caught: 0, correct: 0, seen: 0 };
   const locked = record.caught === 0;
   const level = Math.min(4, record.correct);
@@ -576,11 +545,12 @@ function renderDexDetail() {
       <p class="dex-habit-note">${fishHabitNote(fish)}</p>
       <dl class="dex-detail">
         <div><dt>レア度</dt><dd>${fish.rarity.toUpperCase()}</dd></div>
+        <div><dt>大分類</dt><dd>${fish.kingdomGroup}</dd></div>
         <div><dt>分類</dt><dd>${fish.categoryName}。${fish.categoryNote}</dd></div>
         <div><dt>HP</dt><dd>${maxHpFor(fish)}</dd></div>
         <div><dt>出現</dt><dd>${fishAreasText(fish)}</dd></div>
         <div><dt>すみか</dt><dd>${fish.habitat}</dd></div>
-        <div><dt>食べもの</dt><dd>${fish.diet}</dd></div>
+        ${fish.diet ? `<div><dt>食べもの</dt><dd>${fish.diet}</dd></div>` : ""}
         <div><dt>行動</dt><dd>${fish.behavior}</dd></div>
         <div><dt>注意</dt><dd>${fish.danger}</dd></div>
         <div><dt>学名</dt><dd>${fish.scientific}</dd></div>
@@ -590,7 +560,7 @@ function renderDexDetail() {
   elements.dexDetailPanel.innerHTML = `
     <button class="dex-sheet-close" type="button" data-dex-close aria-label="詳細を閉じる">×</button>
     <div class="dex-detail-hero ${locked ? "locked" : ""}">
-      <img src="${fish.image}" alt="${fish.name}" loading="lazy" />
+      <img src="${fish.image}" alt="${fish.name}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'" />
       <div>
         <h3>${title}</h3>
         <p>${subtitle}</p>
@@ -613,6 +583,25 @@ function renderDexFilters() {
   buttons.forEach((button) => {
     button.classList.toggle("selected", button.dataset.rarity === state.dexRarity);
   });
+
+  if (elements.dexKingdomList) {
+    elements.dexKingdomList.innerHTML = [
+      `<button class="dex-filter-button ${state.dexKingdom === "all" ? "selected" : ""}" type="button" data-kingdom="all">全グループ</button>`,
+      ...getKingdomGroups().map((group) => (
+        `<button class="dex-filter-button ${state.dexKingdom === group ? "selected" : ""}" type="button" data-kingdom="${group}">${group}</button>`
+      )),
+    ].join("");
+  }
+
+  if (elements.dexAreaList) {
+    elements.dexAreaList.innerHTML = [
+      `<button class="dex-filter-button ${state.dexArea === "all" ? "selected" : ""}" type="button" data-dex-area="all">全エリア</button>`,
+      ...areas.map((area) => (
+        `<button class="dex-filter-button ${state.dexArea === area.id ? "selected" : ""}" type="button" data-dex-area="${area.id}">${area.name}</button>`
+      )),
+    ].join("");
+  }
+
   elements.dexCategoryList.innerHTML = [
     `<button class="dex-filter-button ${state.dexCategory === "all" ? "selected" : ""}" type="button" data-category="all">全分類</button>`,
     ...getFishCategories().map((category) => (
@@ -1286,6 +1275,26 @@ elements.dexCategoryList.addEventListener("click", (event) => {
   renderDex();
 });
 
+if (elements.dexKingdomList) {
+  elements.dexKingdomList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-kingdom]");
+    if (!button) return;
+    state.dexKingdom = button.dataset.kingdom;
+    // 大分類を変えたら、その下の分類選択はリセットする。
+    state.dexCategory = "all";
+    renderDex();
+  });
+}
+
+if (elements.dexAreaList) {
+  elements.dexAreaList.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-dex-area]");
+    if (!button) return;
+    state.dexArea = button.dataset.dexArea;
+    renderDex();
+  });
+}
+
 elements.dexList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-fish-id]");
   if (!button) return;
@@ -1324,7 +1333,33 @@ elements.resetButton.addEventListener("click", () => {
   renderBonus();
 });
 
-updateAreaStatus();
-renderDex();
-renderBonus();
-draw();
+async function loadSpecies() {
+  const response = await fetch(SPECIES_URL, { cache: "no-cache" });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const raw = await response.json();
+  if (!Array.isArray(raw) || raw.length === 0) throw new Error("生物データが空です");
+  fishData = raw.map(normalizeSpecies).filter((fish) => fish.id);
+  state.selectedDexFishId = fishData[0].id;
+}
+
+function showLoadError(error) {
+  console.error("生物データの読み込みに失敗:", error);
+  setMessage(
+    "生物データ（data/species.json）を読み込めませんでした。ページを再読み込みするか、配信サーバー越しに開いてください。"
+  );
+}
+
+async function startGame() {
+  try {
+    await loadSpecies();
+  } catch (error) {
+    showLoadError(error);
+    return;
+  }
+  updateAreaStatus();
+  renderDex();
+  renderBonus();
+  draw();
+}
+
+startGame();
