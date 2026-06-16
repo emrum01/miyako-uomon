@@ -157,6 +157,9 @@ const elements = {
   dexCloseButton: document.querySelector("#dexCloseButton"),
   dexSearchInput: document.querySelector("#dexSearchInput"),
   dexSearchClear: document.querySelector("#dexSearchClear"),
+  dexFilterToggle: document.querySelector("#dexFilterToggle"),
+  dexFilterPopup: document.querySelector("#dexFilterPopup"),
+  dexFilterPanel: document.querySelector("#dexFilterPanel"),
   dexFilterList: document.querySelector("#dexFilterList"),
   dexKingdomList: document.querySelector("#dexKingdomList"),
   dexAreaList: document.querySelector("#dexAreaList"),
@@ -216,6 +219,8 @@ const state = {
   dexArea: "all",
   selectedDexFishId: null,
   dexDetailOpen: false,
+  dexFilterOpen: false,
+  dexOpenGroup: null,
   wide: false,
 };
 
@@ -455,39 +460,116 @@ function renderAreas() {
     .join("");
 }
 
-function renderDex() {
-  const caught = fishData.filter((fish) => state.save[fish.id]?.caught > 0).length;
-  elements.caughtCount.textContent = `${caught} / ${fishData.length}`;
-  const filteredFish = getFilteredFish();
-  if (!filteredFish.some((fish) => fish.id === state.selectedDexFishId)) {
-    state.selectedDexFishId = filteredFish[0]?.id || fishData[0]?.id || null;
-  }
-  const visibleFish = filteredFish.slice(0, 160);
+// 1匹分の画像タイル。未捕獲はシルエット＋「？」。
+function dexTileHTML(fish) {
+  const record = state.save[fish.id] || { caught: 0, correct: 0, seen: 0 };
+  const locked = record.caught === 0;
+  const selected = fish.id === state.selectedDexFishId ? "selected" : "";
+  const label = locked ? "？？？" : fish.name;
+  return `
+    <button class="dex-tile selectable ${locked ? "locked" : ""} ${selected}" type="button" data-fish-id="${fish.id}" aria-label="${locked ? "未捕獲の魚" : fish.name}">
+      <span class="dex-tile-img">
+        <img src="${fish.thumb}" alt="${locked ? "" : fish.name}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'" />
+        ${locked ? '<span class="dex-tile-lock" aria-hidden="true">？</span>' : ""}
+      </span>
+      <span class="dex-tile-name">${label}</span>
+    </button>
+  `;
+}
 
-  elements.dexList.innerHTML = visibleFish.length
-    ? `${filteredFish.length > visibleFish.length ? `<p class="dex-empty">該当 ${filteredFish.length}件中 ${visibleFish.length}件を表示中。検索すると絞り込めます。</p>` : ""}${visibleFish
-    .map((fish) => {
-      const record = state.save[fish.id] || { caught: 0, correct: 0, seen: 0 };
-      const locked = record.caught === 0;
-      const level = Math.min(4, record.correct);
-      const title = locked ? "未捕獲" : `${fish.name}（${fish.localName}）`;
-      const detail = locked
-        ? `${fish.categoryName} / ${fish.rarity.toUpperCase()} / 遭遇 ${record.seen || 0}回`
-        : `${fish.categoryName} / 知識Lv.${level} / 捕獲${record.caught}`;
-      const selected = fish.id === state.selectedDexFishId ? "selected" : "";
+function groupFishMap(list) {
+  const grouped = new Map();
+  list.forEach((fish) => {
+    if (!grouped.has(fish.kingdomGroup)) grouped.set(fish.kingdomGroup, []);
+    grouped.get(fish.kingdomGroup).push(fish);
+  });
+  return grouped;
+}
 
+// 1階層目：グループを「集めるアルバム」のカードとして並べる。
+// 代表画像＋進捗バーで、どのグループを埋めたいかが一目で分かるようにする。
+function renderDexAlbum() {
+  const grouped = groupFishMap(fishData);
+  return getKingdomGroups()
+    .filter((group) => grouped.has(group))
+    .map((group) => {
+      const groupFish = grouped.get(group);
+      const caught = groupFish.filter((fish) => state.save[fish.id]?.caught > 0).length;
+      const total = groupFish.length;
+      const percent = Math.round((caught / total) * 100);
+      const allLocked = caught === 0;
+      const complete = caught === total;
+      const rep = groupFish.find((fish) => state.save[fish.id]?.caught > 0) || groupFish[0];
       return `
-        <button class="dex-card selectable ${locked ? "locked" : ""} ${selected}" type="button" data-fish-id="${fish.id}">
-          <img src="${fish.thumb}" alt="${fish.name}" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'" />
-          <div>
-            <h3>${title}</h3>
-            <p>${detail}</p>
-          </div>
+        <button class="dex-group-card ${allLocked ? "locked" : ""} ${complete ? "complete" : ""}" type="button" data-group="${group}">
+          <span class="dex-group-card-img">
+            <img src="${rep.thumb}" alt="" loading="lazy" onerror="this.onerror=null;this.src='${PLACEHOLDER_IMAGE}'" />
+            ${allLocked ? '<span class="dex-tile-lock" aria-hidden="true">？</span>' : ""}
+            ${complete ? '<span class="dex-group-card-badge" aria-hidden="true">★</span>' : ""}
+          </span>
+          <span class="dex-group-card-body">
+            <span class="dex-group-card-name">${group}</span>
+            <span class="dex-group-card-count">${caught} / ${total}</span>
+            <span class="dex-progress"><span class="dex-progress-fill" style="width:${percent}%"></span></span>
+          </span>
         </button>
       `;
     })
-    .join("")}`
-    : `<p class="dex-empty">条件に合う魚がいません。検索語やフィルタを変えてください。</p>`;
+    .join("");
+}
+
+// グループ見出し＋件数のセクションに、魚タイルのグリッドを敷く（検索結果や2階層目で共用）。
+function renderDexSections(list) {
+  const grouped = groupFishMap(list);
+  return getKingdomGroups()
+    .filter((group) => grouped.has(group))
+    .map((group) => {
+      const groupFish = grouped.get(group);
+      const caught = groupFish.filter((fish) => state.save[fish.id]?.caught > 0).length;
+      return `
+        <section class="dex-group">
+          <header class="dex-group-head">
+            <span class="dex-group-name">${group}</span>
+            <span class="dex-group-count">${caught} / ${groupFish.length}</span>
+          </header>
+          <div class="dex-group-grid">${groupFish.map(dexTileHTML).join("")}</div>
+        </section>
+      `;
+    })
+    .join("");
+}
+
+function renderDex() {
+  const caught = fishData.filter((fish) => state.save[fish.id]?.caught > 0).length;
+  elements.caughtCount.textContent = `${caught} / ${fishData.length}`;
+  if (!state.selectedDexFishId) state.selectedDexFishId = fishData[0]?.id || null;
+
+  const query = state.dexQuery.trim();
+  const filtering = query !== "" || state.dexRarity !== "all"
+    || state.dexKingdom !== "all" || state.dexArea !== "all" || state.dexCategory !== "all";
+
+  if (filtering) {
+    // 検索・絞り込み中はアルバムを飛ばし、ヒットした魚を直接タイルで見せる。
+    const filteredFish = getFilteredFish();
+    elements.dexList.innerHTML = filteredFish.length
+      ? `<p class="dex-result-head">${query ? `「${query}」の` : ""}該当 ${filteredFish.length}件</p>${renderDexSections(filteredFish)}`
+      : `<p class="dex-empty">条件に合う魚がいません。検索語やフィルタを変えてください。</p>`;
+  } else if (state.dexOpenGroup) {
+    // 2階層目：選んだグループの中身。
+    const groupFish = fishData.filter((fish) => fish.kingdomGroup === state.dexOpenGroup);
+    const groupCaught = groupFish.filter((fish) => state.save[fish.id]?.caught > 0).length;
+    elements.dexList.innerHTML = `
+      <div class="dex-subhead">
+        <button class="dex-back" type="button" data-dex-back>‹ もどる</button>
+        <span class="dex-subhead-name">${state.dexOpenGroup}</span>
+        <span class="dex-subhead-count">${groupCaught} / ${groupFish.length}</span>
+      </div>
+      <div class="dex-group-grid">${groupFish.map(dexTileHTML).join("")}</div>
+    `;
+  } else {
+    // 1階層目：グループのアルバムカード。
+    elements.dexList.innerHTML = `<div class="dex-group-cards">${renderDexAlbum()}</div>`;
+  }
 
   if (state.dexDetailOpen) renderDexDetail();
   renderDexFilters();
@@ -626,22 +708,43 @@ function renderDexFilters() {
 
   elements.dexCategoryList.innerHTML = [
     `<button class="dex-filter-button ${state.dexCategory === "all" ? "selected" : ""}" type="button" data-category="all">全分類</button>`,
-    ...getFishCategories().map((category) => (
-      `<button class="dex-filter-button ${state.dexCategory === category.id ? "selected" : ""}" type="button" data-category="${category.id}">${category.name}</button>`
-    )),
+    ...getFishCategories().map((category) => {
+      // その分類の魚をすべて捕獲済みなら、ピルにコンプリートの印を出す。
+      const list = fishData.filter((fish) => fish.categoryId === category.id);
+      const complete = list.length > 0 && list.every((fish) => state.save[fish.id]?.caught > 0);
+      return `<button class="dex-filter-button ${complete ? "complete" : ""} ${state.dexCategory === category.id ? "selected" : ""}" type="button" data-category="${category.id}">${category.name}${complete ? '<span class="dex-pill-complete" aria-hidden="true">★</span>' : ""}</button>`;
+    }),
   ].join("");
+
+  // 何かしら絞り込みが効いていればトグルに印を出し、閉じていても気づけるようにする。
+  if (elements.dexFilterToggle) {
+    const hasActive = state.dexRarity !== "all" || state.dexKingdom !== "all"
+      || state.dexArea !== "all" || state.dexCategory !== "all";
+    elements.dexFilterToggle.classList.toggle("has-active", hasActive);
+  }
+}
+
+function setDexFilterOpen(open) {
+  state.dexFilterOpen = open;
+  elements.dexFilterPopup.classList.toggle("hidden", !open);
+  if (elements.dexFilterToggle) {
+    elements.dexFilterToggle.setAttribute("aria-expanded", String(open));
+    elements.dexFilterToggle.classList.toggle("open", open);
+  }
 }
 
 function openDexScreen() {
   playSfx("menu", 0.42);
   elements.dexScreen.classList.remove("hidden");
   elements.menuPanel.classList.add("hidden");
+  state.dexOpenGroup = null;
   renderDex();
 }
 
 function closeDexScreen() {
   playSfx("menu", 0.34);
   closeDexDetail(false);
+  setDexFilterOpen(false);
   elements.dexScreen.classList.add("hidden");
 }
 
@@ -1394,6 +1497,20 @@ elements.dexSearchClear.addEventListener("click", () => {
   renderDex();
 });
 
+if (elements.dexFilterToggle) {
+  elements.dexFilterToggle.addEventListener("click", () => {
+    setDexFilterOpen(!state.dexFilterOpen);
+  });
+}
+
+if (elements.dexFilterPopup) {
+  elements.dexFilterPopup.addEventListener("click", (event) => {
+    if (event.target.closest("[data-dex-filter-close]")) {
+      setDexFilterOpen(false);
+    }
+  });
+}
+
 elements.dexFilterList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-rarity]");
   if (!button) return;
@@ -1429,6 +1546,23 @@ if (elements.dexAreaList) {
 }
 
 elements.dexList.addEventListener("click", (event) => {
+  const groupCard = event.target.closest("[data-group]");
+  if (groupCard) {
+    playSfx("menu", 0.34);
+    state.dexOpenGroup = groupCard.dataset.group;
+    elements.dexList.scrollTop = 0;
+    renderDex();
+    return;
+  }
+
+  if (event.target.closest("[data-dex-back]")) {
+    playSfx("menu", 0.3);
+    state.dexOpenGroup = null;
+    elements.dexList.scrollTop = 0;
+    renderDex();
+    return;
+  }
+
   const button = event.target.closest("[data-fish-id]");
   if (!button) return;
   openDexDetail(button.dataset.fishId);
