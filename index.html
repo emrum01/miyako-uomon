@@ -66,6 +66,14 @@
               </span>
               <span class="dex-link-arrow" aria-hidden="true">›</span>
             </button>
+            <button id="shopOpenButton" class="dex-link-button" type="button">
+              <span class="dex-link-icon" aria-hidden="true">🪙</span>
+              <span class="dex-link-text">
+                <strong>ひでん技ショップ</strong>
+                <small>うみコインで秘伝技と交換</small>
+              </span>
+              <span class="dex-link-arrow" aria-hidden="true">›</span>
+            </button>
           </section>
 
           <section class="panel">
@@ -137,6 +145,23 @@
 
           <div id="dexDetailScrim" class="dex-detail-scrim hidden" aria-hidden="true"></div>
           <article id="dexDetailPanel" class="dex-detail-panel hidden" aria-label="魚の詳細"></article>
+        </section>
+
+        <section id="shopScreen" class="dex-screen hidden" aria-label="ひでん技ショップ">
+          <div class="dex-screen-header">
+            <div>
+              <p class="eyebrow">Umi Coin Shop</p>
+              <h2>ひでん技ショップ</h2>
+              <p>うみコインを使って秘伝技と交換しよう。</p>
+            </div>
+            <button id="shopCloseButton" class="icon-button" type="button" aria-label="ショップを閉じる" title="閉じる">×</button>
+          </div>
+
+          <p id="shopBalance" class="shop-lead">うみコイン 0</p>
+
+          <div class="dex-browser">
+            <div id="shopList" class="shop-list" aria-label="秘伝技一覧"></div>
+          </div>
         </section>
 
         <button id="menuToggle" class="floating-menu-button" type="button" aria-label="メニューを開く">☰</button>

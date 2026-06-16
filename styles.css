@@ -1604,3 +1604,103 @@ body.battle-active #menuPanel {
     line-height: 1.35;
   }
 }
+
+/* ---- うみコインショップ ---- */
+
+.shop-lead {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--sea);
+}
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 16px;
+}
+
+.shop-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  border: 2px solid rgba(39, 56, 71, 0.12);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(23, 32, 42, 0.07);
+}
+
+.shop-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shop-card-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--sea), var(--kelp));
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.shop-card-name {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.shop-card-price {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--sea);
+  white-space: nowrap;
+}
+
+.shop-card-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.shop-card-buy {
+  align-self: flex-end;
+  padding: 9px 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, var(--sea), var(--kelp));
+  cursor: pointer;
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.shop-card-buy:hover:not(:disabled) {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.shop-card-buy:disabled {
+  background: #c5cdd5;
+  color: #8899aa;
+  cursor: default;
+}
+
+@media (max-width: 640px) {
+  .shop-lead {
+    font-size: 0.95rem;
+  }
+
+  .shop-card {
+    padding: 13px;
+    border-radius: 12px;
+  }
+}
