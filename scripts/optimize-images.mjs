@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// assets/species/<id>/source.* を main.webp(横900px) / thumb.webp(横240px) に変換する（macOSの sips 使用）。
+// assets/species/<id>/source.* を main(横900px) / thumb(横240px) に変換する。
 //
 //   node scripts/optimize-images.mjs
 //
-// 変換後、data/species.json の image / thumb を ./assets/species/<id>/main.webp などに
-// 手動で差し替えるか、別途スクリプトで一括更新してください。
-// sips は WebP 出力に対応（macOS 11+）。未対応環境では cwebp 等に置き換えてください。
+// WebP を書ける環境（cwebp があれば優先）では .webp を、無ければ sips で
+// 最適化済みリサイズ JPEG (.jpg) を出力する（macOS の sips は WebP 書き出し非対応版がある）。
+// 変換後は node scripts/apply-local-images.mjs で species.json の image/thumb を差し替える。
 
 import { readdirSync, existsSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -18,8 +18,26 @@ const base = join(root, "assets", "species");
 const MAIN_W = 900;
 const THUMB_W = 240;
 
-function sips(...a) {
-  return execFileSync("sips", a, { stdio: ["ignore", "ignore", "pipe"] });
+function has(cmd) {
+  try { execFileSync("which", [cmd], { stdio: "ignore" }); return true; } catch { return false; }
+}
+const HAS_CWEBP = has("cwebp");
+const EXT = HAS_CWEBP ? "webp" : "jpg";
+console.log(`出力形式: ${EXT}${HAS_CWEBP ? " (cwebp)" : " (sips JPEG)"}`);
+
+function toMain(input, out) {
+  if (HAS_CWEBP) {
+    execFileSync("cwebp", ["-quiet", "-q", "80", "-resize", String(MAIN_W), "0", input, "-o", out]);
+  } else {
+    execFileSync("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "72", "-Z", String(MAIN_W), input, "--out", out], { stdio: ["ignore", "ignore", "pipe"] });
+  }
+}
+function toThumb(input, out) {
+  if (HAS_CWEBP) {
+    execFileSync("cwebp", ["-quiet", "-q", "78", "-resize", String(THUMB_W), "0", input, "-o", out]);
+  } else {
+    execFileSync("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "65", "-Z", String(THUMB_W), input, "--out", out], { stdio: ["ignore", "ignore", "pipe"] });
+  }
 }
 
 if (!existsSync(base)) {
@@ -28,22 +46,23 @@ if (!existsSync(base)) {
 }
 
 let done = 0;
+let failed = 0;
 for (const id of readdirSync(base)) {
   const dir = join(base, id);
   if (!statSync(dir).isDirectory()) continue;
   const src = readdirSync(dir).find((f) => f.startsWith("source."));
   if (!src) continue;
   const input = join(dir, src);
-  const main = join(dir, "main.webp");
-  const thumb = join(dir, "thumb.webp");
+  const main = join(dir, `main.${EXT}`);
+  const thumb = join(dir, `thumb.${EXT}`);
   try {
-    sips("-s", "format", "webp", "-Z", String(MAIN_W), input, "--out", main);
-    sips("-s", "format", "webp", "-Z", String(THUMB_W), main, "--out", thumb);
+    toMain(input, main);
+    toThumb(main, thumb);
     done += 1;
-    console.log(`✓ ${id}: main.webp / thumb.webp`);
   } catch (error) {
-    console.warn(`✗ ${id}: ${error.message}`);
+    failed += 1;
+    console.warn(`✗ ${id}: ${String(error.message).split("\n")[0]}`);
   }
 }
 
-console.log(`\n変換 ${done} 種。`);
+console.log(`変換 ${done} 種 / 失敗 ${failed}`);

@@ -26,12 +26,25 @@
 
 ### データ・画像のスクリプト
 
-- `scripts/validate-species.mjs` — `data/species.json` のスキーマ/重複/件数検証（`node scripts/validate-species.mjs`）
-- `scripts/fetch-species-images.mjs` — `image` URLから原画像を `assets/species/<id>/source.*` に取得
-- `scripts/optimize-images.mjs` — 原画像を `main.webp`(横900px) / `thumb.webp`(横240px) に変換（macOS `sips`）
+- `scripts/validate-species.mjs` — `data/species.json` のスキーマ/重複/件数検証
+- `scripts/fetch-inaturalist-images.mjs` — **iNaturalist API** から学名で画像を取得（推奨。撮影者の帰属・CCライセンスを記録）。1.2秒スロットル＋429リトライでサーバーに優しく取得
+- `scripts/fetch-species-images.mjs` — `image` URL（Wikimedia等）から直接取得する旧方式（ファイル名が分かっている場合用）
+- `scripts/optimize-images.mjs` — 原画像を `main`(横900px) / `thumb`(横240px) に変換。`cwebp` があれば WebP、無ければ `sips` で最適化JPEG
+- `scripts/apply-local-images.mjs` — 変換済みローカル画像へ `data/species.json` の `image`/`thumb` を差し替え
 
-画像は `assets/species/<id>/main.webp`・`thumb.webp` をローカル保存する方針。未取得の種は
-`image` を省略すると、表示時に `assets/species/placeholder.svg` へ自動フォールバックします。
+画像取得〜反映の流れ:
+
+```bash
+node scripts/fetch-inaturalist-images.mjs   # iNaturalistから取得（CC画像・帰属記録）
+node scripts/optimize-images.mjs            # main/thumb へ縮小・最適化
+node scripts/apply-local-images.mjs         # species.json をローカルパスに差し替え
+node scripts/validate-species.mjs           # 検証
+```
+
+現状 **151種中149種がローカル最適化画像**（`assets/species/<id>/`）、2種（学名がiNat未登録）は
+`assets/species/placeholder.svg` に自動フォールバック。画像は iNaturalist の CC ライセンス素材で、
+撮影者の帰属は各種 `imageAttribution` / `imageLicense` に保存し、図鑑詳細にクレジット表示します。
+`cwebp`（`brew install webp`）を入れて `optimize-images.mjs` を回せば WebP 化でさらに軽くできます。
 
 ## MVPの範囲
 

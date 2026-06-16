@@ -879,6 +879,14 @@ body.battle-flash .game-screen::after {
   line-height: 1.45;
 }
 
+.dex-credit {
+  margin-top: 12px !important;
+  color: #7c8a93 !important;
+  font-size: 0.72rem !important;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
 .dex-detail {
   display: grid;
   gap: 6px;

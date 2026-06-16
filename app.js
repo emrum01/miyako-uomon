@@ -51,6 +51,8 @@ function normalizeSpecies(raw) {
     image,
     thumb,
     source: raw.source || raw.imageSource || "",
+    imageAttribution: raw.imageAttribution || "",
+    imageLicense: raw.imageLicense || "",
   };
 }
 
@@ -555,6 +557,7 @@ function renderDexDetail() {
         <div><dt>注意</dt><dd>${fish.danger}</dd></div>
         <div><dt>学名</dt><dd>${fish.scientific}</dd></div>
       </dl>
+      ${fish.imageAttribution ? `<p class="dex-credit">画像: ${fish.imageAttribution}${fish.imageLicense ? `（${fish.imageLicense}）` : ""} via iNaturalist</p>` : ""}
     `;
 
   elements.dexDetailPanel.innerHTML = `
