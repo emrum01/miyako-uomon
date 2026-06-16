@@ -99,6 +99,11 @@ const quizTypes = [
 const tileSize = 32;
 const mapCols = 20;
 const mapRows = 30;
+// マップ（プレイ領域）の固定サイズ。スマホ/タブレットではcanvasと同じ。
+// PCではcanvasを横長にし、この左側にマップ、右側に情報パネルを描く。
+const MAP_W = mapCols * tileSize; // 640
+const MAP_H = mapRows * tileSize; // 960
+const WIDE_CANVAS_W = 1160; // PC時のcanvas内部幅（マップ640 + 情報パネル520）
 const playerStart = { x: 10, y: 10 };
 const battleBgmSources = {
   normal: "./assets/audio/battle-umi-no-himitsugyo.mp3",
@@ -211,7 +216,21 @@ const state = {
   dexArea: "all",
   selectedDexFishId: null,
   dexDetailOpen: false,
+  wide: false,
 };
+
+// PC（横長）レイアウトとスマホ（縦長）レイアウトを切り替える。
+const wideLayoutQuery = window.matchMedia("(min-width: 981px)");
+
+function applyLayout() {
+  const wide = wideLayoutQuery.matches;
+  state.wide = wide;
+  const targetW = wide ? WIDE_CANVAS_W : MAP_W;
+  if (elements.canvas.width !== targetW) elements.canvas.width = targetW;
+  if (elements.canvas.height !== MAP_H) elements.canvas.height = MAP_H;
+  // canvasのサイズを変更するとコンテキスト状態がリセットされるため再設定する。
+  ctx.imageSmoothingEnabled = false;
+}
 
 function ensureFishSave(fishId) {
   if (!state.save[fishId]) {
@@ -914,6 +933,117 @@ function drawMap() {
   drawMapDecorations(state.currentMap);
   drawMapLabel();
   drawPlayer();
+
+  if (state.wide) {
+    drawInfoPanel(MAP_W, 0, elements.canvas.width - MAP_W, MAP_H);
+  }
+}
+
+// PC横長レイアウトでcanvas右側に描く情報パネル（探索中のステータス表示）。
+function drawInfoPanel(x, y, w, h) {
+  const area = getCurrentArea();
+  const total = fishData.length;
+  const caught = fishData.filter((fish) => state.save[fish.id]?.caught > 0).length;
+  const pad = 28;
+  const innerX = x + pad;
+  const innerW = w - pad * 2;
+
+  // 背景
+  ctx.save();
+  const bg = ctx.createLinearGradient(x, 0, x, h);
+  bg.addColorStop(0, "#0e5f72");
+  bg.addColorStop(1, "#0b3f57");
+  ctx.fillStyle = bg;
+  ctx.fillRect(x, y, w, h);
+  ctx.fillStyle = "rgba(255,255,255,0.06)";
+  ctx.fillRect(x, y, 4, h);
+
+  ctx.textBaseline = "top";
+  let cy = 48;
+
+  // タイトル
+  ctx.fillStyle = "rgba(255,255,255,0.55)";
+  ctx.font = "800 15px system-ui";
+  ctx.fillText("MIYAKO FISH QUEST", innerX, cy);
+  cy += 30;
+
+  // 現在地
+  ctx.fillStyle = "rgba(255,255,255,0.62)";
+  ctx.font = "700 16px system-ui";
+  ctx.fillText("現在地", innerX, cy);
+  cy += 26;
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "900 34px system-ui";
+  ctx.fillText(area.name, innerX, cy);
+  cy += 46;
+  ctx.fillStyle = "rgba(255,255,255,0.82)";
+  ctx.font = "600 16px system-ui";
+  wrapText(area.description, innerX, cy, innerW, 24);
+  cy += 64;
+
+  // ステータスカード（図鑑・うみコイン）
+  drawStatCard(innerX, cy, innerW, "ずかん", `${caught} / ${total}`, "#34b36b");
+  cy += 92;
+  drawStatCard(innerX, cy, innerW, "うみコイン", `${state.bonus}`, "#e8c56e");
+  cy += 92;
+
+  // 操作ヒント
+  ctx.fillStyle = "rgba(255,255,255,0.5)";
+  ctx.font = "600 14px system-ui";
+  wrapText(
+    "矢印キー / WASD で移動。画面の端から隣のマップへ。海面がざわつくと魚に出会えます。",
+    innerX,
+    cy,
+    innerW,
+    22
+  );
+  ctx.restore();
+}
+
+function drawStatCard(x, y, w, label, value, accent) {
+  ctx.save();
+  ctx.fillStyle = "rgba(255,255,255,0.1)";
+  roundRect(x, y, w, 72, 14);
+  ctx.fill();
+  ctx.fillStyle = accent;
+  roundRect(x, y, 6, 72, 3);
+  ctx.fill();
+  ctx.textBaseline = "top";
+  ctx.fillStyle = "rgba(255,255,255,0.66)";
+  ctx.font = "700 15px system-ui";
+  ctx.fillText(label, x + 20, y + 14);
+  ctx.fillStyle = "#ffffff";
+  ctx.font = "900 30px system-ui";
+  ctx.fillText(value, x + 20, y + 34);
+  ctx.restore();
+}
+
+function roundRect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.arcTo(x + w, y, x + w, y + h, r);
+  ctx.arcTo(x + w, y + h, x, y + h, r);
+  ctx.arcTo(x, y + h, x, y, r);
+  ctx.arcTo(x, y, x + w, y, r);
+  ctx.closePath();
+}
+
+function wrapText(text, x, y, maxWidth, lineHeight) {
+  const chars = [...text];
+  let line = "";
+  let cy = y;
+  for (const ch of chars) {
+    const test = line + ch;
+    if (ctx.measureText(test).width > maxWidth && line) {
+      ctx.fillText(line, x, cy);
+      line = ch;
+      cy += lineHeight;
+    } else {
+      line = test;
+    }
+  }
+  if (line) ctx.fillText(line, x, cy);
+  return cy + lineHeight;
 }
 
 function drawTile(x, y, areaId) {
@@ -1021,7 +1151,7 @@ function drawMapDecorations(mapId) {
   }
   if (mapId === "beach") {
     ctx.fillStyle = "#ffffff";
-    ctx.fillRect(0, 13 * tileSize + 8, elements.canvas.width, 8);
+    ctx.fillRect(0, 13 * tileSize + 8, MAP_W, 8);
     ctx.fillStyle = "#d8b75d";
     ctx.fillRect(2 * tileSize, 6 * tileSize, 4 * tileSize, 2 * tileSize);
   }
@@ -1362,7 +1492,14 @@ async function startGame() {
   updateAreaStatus();
   renderDex();
   renderBonus();
+  applyLayout();
   draw();
+}
+
+if (wideLayoutQuery.addEventListener) {
+  wideLayoutQuery.addEventListener("change", applyLayout);
+} else if (wideLayoutQuery.addListener) {
+  wideLayoutQuery.addListener(applyLayout);
 }
 
 startGame();

@@ -927,6 +927,44 @@ body.battle-active #menuPanel {
   display: none;
 }
 
+/* PC・タブレット（641px以上）では縦長キャンバスが画面を突き抜けるため、
+   ビューポート高さ基準でスマホ型の枠に収めて中央に配置する */
+@media (min-width: 641px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
+  .app-shell {
+    width: auto;
+    max-width: 100vw;
+  }
+
+  .game-layout,
+  .game-panel,
+  .game-screen {
+    width: auto;
+  }
+
+  #gameCanvas {
+    width: auto;
+    height: min(48dvh, calc((100vw - 80px) * 1.5));
+    max-width: calc(100vw - 32px);
+    aspect-ratio: 2 / 3;
+  }
+}
+
+@media (min-width: 981px) {
+  /* PCではcanvasを横長(1160x960)にし、左=マップ / 右=情報UI をJSで描き分ける。
+     CSS側はその横長canvasをビューポート高さ基準で中央に収めるだけ。 */
+  #gameCanvas {
+    width: auto;
+    height: min(82dvh, calc((100vw - 64px) * 960 / 1160));
+    max-width: calc(100vw - 32px);
+    aspect-ratio: auto;
+  }
+}
+
 @media (max-width: 980px) {
   .game-layout {
     display: block;
@@ -990,8 +1028,8 @@ body.battle-active #menuPanel {
   }
 
   .battle-fish-image {
-    top: 15%;
-    height: 34%;
+    top: 24%;
+    height: 32%;
   }
 
   .enemy-hp-panel {
