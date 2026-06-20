@@ -78,6 +78,36 @@
 
           <section class="panel">
             <div class="panel-heading">
+              <h2>せってい</h2>
+              <p>あそびかたを えらべる</p>
+            </div>
+            <div class="settings-list">
+              <div class="setting-row">
+                <span class="setting-text">
+                  <strong>ひらがなモード</strong>
+                  <small>カタカナを ひらがなに する</small>
+                </span>
+                <button id="hiraganaToggle" class="setting-switch" type="button" role="switch" aria-checked="false" aria-label="ひらがなモード"></button>
+              </div>
+              <div class="setting-row">
+                <span class="setting-text">
+                  <strong>なまえあてモード</strong>
+                  <small>クイズを 名前あてだけに する</small>
+                </span>
+                <button id="nameOnlyToggle" class="setting-switch" type="button" role="switch" aria-checked="false" aria-label="なまえあてモード"></button>
+              </div>
+              <div class="setting-row">
+                <span class="setting-text">
+                  <strong>BGM</strong>
+                  <small>おんがくの オン・オフ</small>
+                </span>
+                <button id="bgmToggle" class="setting-switch" type="button" role="switch" aria-checked="true" aria-label="BGMオンオフ"></button>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
               <h2>現在地</h2>
               <p id="areaStatus">平良港</p>
             </div>
@@ -169,6 +199,8 @@
       </section>
     </main>
 
+    <!-- ひらがなモード用の日本語形態素解析（漢字→読み）。本体読み込み前に定義しておく。 -->
+    <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

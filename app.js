@@ -507,6 +507,9 @@ const elements = {
   caughtCount: document.querySelector("#caughtCount"),
   soundToggle: document.querySelector("#soundToggle"),
   resetButton: document.querySelector("#resetButton"),
+  hiraganaToggle: document.querySelector("#hiraganaToggle"),
+  nameOnlyToggle: document.querySelector("#nameOnlyToggle"),
+  bgmToggle: document.querySelector("#bgmToggle"),
 };
 
 const ctx = elements.canvas.getContext("2d");
@@ -548,7 +551,107 @@ const state = {
   dexFilterOpen: false,
   dexOpenGroup: null,
   wide: false,
+  // 設定（それぞれ独立。localStorageに保存）。
+  hiraganaMode: false,
+  nameOnlyMode: false,
+  bgmOn: true,
+  lastMessage: "",
 };
+
+// 設定を localStorage から読み込む（後方互換のためデフォルト値でフォールバック）。
+(function loadSettings() {
+  let saved = {};
+  try {
+    saved = JSON.parse(localStorage.getItem("mfq-settings") || "{}");
+  } catch (_) {
+    saved = {};
+  }
+  state.hiraganaMode = !!saved.hiraganaMode;
+  state.nameOnlyMode = !!saved.nameOnlyMode;
+  state.bgmOn = saved.bgmOn === undefined ? true : !!saved.bgmOn;
+})();
+
+function saveSettings() {
+  localStorage.setItem("mfq-settings", JSON.stringify({
+    hiraganaMode: state.hiraganaMode,
+    nameOnlyMode: state.nameOnlyMode,
+    bgmOn: state.bgmOn,
+  }));
+}
+
+// カタカナをひらがなに変換する（kuromojiの読み[カタカナ]→ひらがな用）。
+function toHiragana(text) {
+  return String(text).replace(/[ァ-ヶ]/g, (ch) =>
+    String.fromCharCode(ch.charCodeAt(0) - 0x60)
+  );
+}
+
+const KANJI_RE = /[一-鿿々〆]/;
+function hasKanji(text) {
+  return KANJI_RE.test(text);
+}
+
+// kuromoji（日本語形態素解析）を遅延ロードする。ひらがなモードを使う時だけ取得。
+let kuromojiTokenizer = null;
+let kuromojiLoading = false;
+const hiraganaCache = new Map();
+
+function ensureTokenizer() {
+  if (kuromojiTokenizer || kuromojiLoading) return;
+  if (typeof kuromoji === "undefined") return; // ライブラリ未ロード
+  kuromojiLoading = true;
+  kuromoji
+    .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/dict/" })
+    .build((err, tokenizer) => {
+      kuromojiLoading = false;
+      if (err) {
+        console.error("kuromojiの読み込みに失敗:", err);
+        return;
+      }
+      kuromojiTokenizer = tokenizer;
+      refreshLocalizedText();
+    });
+}
+
+// 漢字だけをひらがな読みに変換する。カタカナ・英数・記号はそのまま。
+function kanjiToHiragana(text) {
+  if (!hasKanji(text)) return text;
+  if (!kuromojiTokenizer) {
+    ensureTokenizer();
+    return text; // 解析器が準備できるまでは原文（準備後に再描画）。
+  }
+  if (hiraganaCache.has(text)) return hiraganaCache.get(text);
+  let result;
+  try {
+    result = kuromojiTokenizer
+      .tokenize(text)
+      .map((token) => {
+        if (hasKanji(token.surface_form) && token.reading && token.reading !== "*") {
+          return toHiragana(token.reading);
+        }
+        return token.surface_form;
+      })
+      .join("");
+  } catch (_) {
+    result = text;
+  }
+  hiraganaCache.set(text, result);
+  return result;
+}
+
+// ひらがなモードが有効なら、HTMLタグを保ったまま漢字部分だけをひらがなに変換する。
+function localizeText(text) {
+  if (!state.hiraganaMode) return text;
+  return String(text).replace(/(<[^>]+>)|([^<]+)/g, (match, tag, plain) =>
+    tag ? tag : kanjiToHiragana(plain)
+  );
+}
+
+// 表示中のメッセージ・クイズをローカライズし直す（モード切替や解析器ロード完了時）。
+function refreshLocalizedText() {
+  if (typeof state.lastMessage === "string") setMessage(state.lastMessage);
+  if (state.mode === "quiz" && state.currentQuiz) renderQuiz();
+}
 
 // PC（横長）レイアウトとスマホ（縦長）レイアウトを切り替える。
 const wideLayoutQuery = window.matchMedia("(min-width: 981px)");
@@ -816,7 +919,8 @@ function escapeHtml(text) {
 }
 
 function setMessage(message) {
-  elements.messageBox.innerHTML = message;
+  state.lastMessage = message;
+  elements.messageBox.innerHTML = localizeText(message);
 }
 
 function updateAreaStatus() {
@@ -1321,10 +1425,12 @@ function handleCommand(command) {
     state.mode = "quiz";
     elements.commandPanel.classList.add("hidden");
     const record = ensureFishSave(state.currentFish.id);
-    state.currentQuiz = buildQuiz(state.currentFish, {
-      forceName: record.caught === 0 && !state.nameRevealed,
-      skipName: record.caught > 0 || state.nameRevealed,
-    });
+    state.currentQuiz = buildQuiz(state.currentFish, state.nameOnlyMode
+      ? { forceName: true }
+      : {
+          forceName: record.caught === 0 && !state.nameRevealed,
+          skipName: record.caught > 0 || state.nameRevealed,
+        });
     renderQuiz();
     setMessage(state.currentQuiz.type.key === "name" ? "まずは名前を見きわめよう。" : `${state.currentFish.name}の習性を見きわめろ！`);
     return;
@@ -1348,12 +1454,13 @@ function renderQuiz() {
   elements.quizPanel.classList.remove("correct-scroll", "next-scroll");
   elements.quizPanel.classList.remove("hidden");
   const rawQuestion = quiz.type.question(fish);
-  elements.questionText.textContent = state.nameRevealed || quiz.type.key === "name"
+  const question = state.nameRevealed || quiz.type.key === "name"
     ? rawQuestion
     : rawQuestion.replaceAll(fish.name, "この魚");
+  elements.questionText.textContent = localizeText(question);
   elements.resultText.textContent = "";
   elements.answerList.innerHTML = quiz.choices
-    .map((choice) => `<button class="answer-button" type="button" data-answer="${escapeHtml(choice)}">${choice}</button>`)
+    .map((choice) => `<button class="answer-button" type="button" data-answer="${escapeHtml(choice)}">${escapeHtml(localizeText(choice))}</button>`)
     .join("");
 }
 
@@ -1364,10 +1471,12 @@ function transitionToNextQuiz() {
   setTimeout(() => {
     if (state.mode !== "transition" || !state.currentFish) return;
     const record = ensureFishSave(state.currentFish.id);
-    state.currentQuiz = buildQuiz(state.currentFish, {
-      forceName: record.caught === 0 && !state.nameRevealed,
-      skipName: record.caught > 0 || state.nameRevealed,
-    });
+    state.currentQuiz = buildQuiz(state.currentFish, state.nameOnlyMode
+      ? { forceName: true }
+      : {
+          forceName: record.caught === 0 && !state.nameRevealed,
+          skipName: record.caught > 0 || state.nameRevealed,
+        });
     state.mode = "quiz";
     renderQuiz();
     elements.quizPanel.classList.add("next-scroll");
@@ -1403,7 +1512,7 @@ function answer(choice, button) {
       const reward = rewardFor(fish);
       record.caught += 1;
       state.bonus += reward;
-      elements.resultText.innerHTML = `正解。${fish.behavior}<br>${fish.name}を捕獲した。`;
+      elements.resultText.innerHTML = localizeText(`正解。${fish.behavior}<br>${fish.name}を捕獲した。`);
       setMessage(`${fish.name}をたおした！ 図鑑に登録して、${reward}うみコインを手に入れた。`);
       persist();
       playSfx("capture", 0.64);
@@ -1416,14 +1525,14 @@ function answer(choice, button) {
       return;
     }
 
-    elements.resultText.innerHTML = `正解。${fish.behavior}<br>${fishDisplayName()}のHPが ${state.currentHp} まで下がった。`;
+    elements.resultText.innerHTML = localizeText(`正解。${fish.behavior}<br>${fishDisplayName()}のHPが ${state.currentHp} まで下がった。`);
     setMessage(`${fishDisplayName()}にきいた！ HPが少し減った。あと${state.currentHp}回、習性を見きわめよう。`);
     persist();
     transitionToNextQuiz();
   } else {
     button.classList.add("wrong");
     state.wrongCount += 1;
-    elements.resultText.textContent = `不正解。正解は「${state.currentQuiz.answer}」。`;
+    elements.resultText.textContent = localizeText(`不正解。正解は「${state.currentQuiz.answer}」。`);
     playSfx("wrong", 0.5);
     persist();
 
@@ -3018,7 +3127,7 @@ function playBattleBgm(mode) {
 }
 
 function playBgm(mode, src, volume) {
-  if (!state.soundOn) return;
+  if (!state.soundOn || !state.bgmOn) return;
   unlockAudio();
   if (!src) return;
   if (!state.bgm || state.bgmMode !== mode) {
@@ -3265,6 +3374,51 @@ elements.resetButton.addEventListener("click", () => {
   renderBonus();
   renderShop();
 });
+
+// 設定UIの初期表示を state に合わせる。
+function syncSettingsUI() {
+  elements.hiraganaToggle.setAttribute("aria-checked", String(state.hiraganaMode));
+  elements.nameOnlyToggle.setAttribute("aria-checked", String(state.nameOnlyMode));
+  elements.bgmToggle.setAttribute("aria-checked", String(state.bgmOn));
+  // 保存済みでひらがなモードがONなら解析器を先読みしておく。
+  if (state.hiraganaMode) ensureTokenizer();
+}
+
+elements.hiraganaToggle.addEventListener("click", () => {
+  state.hiraganaMode = !state.hiraganaMode;
+  elements.hiraganaToggle.setAttribute("aria-checked", String(state.hiraganaMode));
+  saveSettings();
+  playSfx("select", 0.42);
+  if (state.hiraganaMode) ensureTokenizer();
+  // 表示中のメッセージ・クイズを即座に切り替える。
+  refreshLocalizedText();
+});
+
+elements.nameOnlyToggle.addEventListener("click", () => {
+  state.nameOnlyMode = !state.nameOnlyMode;
+  elements.nameOnlyToggle.setAttribute("aria-checked", String(state.nameOnlyMode));
+  saveSettings();
+  playSfx("select", 0.42);
+});
+
+elements.bgmToggle.addEventListener("click", () => {
+  state.bgmOn = !state.bgmOn;
+  elements.bgmToggle.setAttribute("aria-checked", String(state.bgmOn));
+  saveSettings();
+  playSfx("select", 0.42);
+  if (state.bgmOn) {
+    unlockAudio();
+    if (state.currentFish) {
+      playBattleBgm(state.currentFish.rarity === "legendary" ? "legendary" : state.currentFish.rarity === "rare" ? "rare" : "normal");
+    } else {
+      playMapBgm();
+    }
+  } else {
+    clearBgm();
+  }
+});
+
+syncSettingsUI();
 
 async function loadSpecies() {
   const response = await fetch(SPECIES_URL, { cache: "no-cache" });
